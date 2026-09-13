@@ -1,0 +1,31 @@
+{
+  "schema": "sourceguard.runtime_index.checkpoint.v1",
+  "state": "FROZEN_GOOD_STATE",
+  "human_decision": "CHOT_RUNTIME_INDEX",
+  "created_at_utc": "2026-09-13T07:41:57Z",
+  "source_units": {
+    "path": "source_index/source_units.jsonl",
+    "sha256": "594d202448867b5fed799ffa878b1cf44563aef92a11cabb54dff05dff257609",
+    "count": 13
+  },
+  "content_chains": {
+    "path": "source_index/content_chains.jsonl",
+    "sha256": "2a508f184a88f0b7fffd7c1e098ebfdbbbcc96ddbe8a5b290ed8caf1dea0567d",
+    "count": 13
+  },
+  "manifest": {
+    "path": "source_index/index_manifest.json",
+    "sha256": "dfdbbbf68301d3f3726fa59c4f5937dcf882e64430d7d1ff1d3200033d8fe58d",
+    "state": "FROZEN"
+  },
+  "runtime_policy": {
+    "same_chain_retrieval": "RETURN_ALL_MEMBERS",
+    "source_truth": "DRIVE_ORIGINAL_PLUS_FROZEN_GEOMETRY",
+    "heavy_binary_storage": "GOOGLE_DRIVE_ONLY"
+  },
+  "governance": {
+    "page08_gold_modified": false,
+    "page91_frozen_modified": false,
+    "engine_modified": false
+  }
+}

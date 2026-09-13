@@ -1,0 +1,13 @@
+{"content_chain_id":"PHY12_B21_R02_CHAIN","member_count":1,"source_ids":["PHY12_P91_R02"],"pages":["P91"],"context_codes":["B21"],"type_codes":["CH"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_B21_R03_CHAIN","member_count":1,"source_ids":["PHY12_P91_R03"],"pages":["P91"],"context_codes":["B21"],"type_codes":["TN"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_B21_R07_CHAIN","member_count":1,"source_ids":["PHY12_P91_R07"],"pages":["P91"],"context_codes":["B21"],"type_codes":["ND"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_B21_V01_CHAIN","member_count":1,"source_ids":["PHY12_P91_V01"],"pages":["P91"],"context_codes":["B21"],"type_codes":["H"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_B21_V02_CHAIN","member_count":1,"source_ids":["PHY12_P91_V02"],"pages":["P91"],"context_codes":["B21"],"type_codes":["H"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_B21_V03_CHAIN","member_count":1,"source_ids":["PHY12_P91_V03"],"pages":["P91"],"context_codes":["B21"],"type_codes":["H"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_G01_CHAIN","member_count":1,"source_ids":["PHY12_P08_G01"],"pages":["P08"],"context_codes":["C1"],"type_codes":["ND"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_G02_CHAIN","member_count":1,"source_ids":["PHY12_P08_G02"],"pages":["P08"],"context_codes":["C1"],"type_codes":["ND"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_G03_CHAIN","member_count":1,"source_ids":["PHY12_P08_G03"],"pages":["P08"],"context_codes":["C1"],"type_codes":["CH"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_G04_CHAIN","member_count":1,"source_ids":["PHY12_P08_G04"],"pages":["P08"],"context_codes":["C1"],"type_codes":["BT"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_N01_CHAIN","member_count":1,"source_ids":["PHY12_P08_N01"],"pages":["P08"],"context_codes":["C1"],"type_codes":["ND"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_V01_CHAIN","member_count":1,"source_ids":["PHY12_P08_V01"],"pages":["P08"],"context_codes":["C1"],"type_codes":["H"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}
+{"content_chain_id":"PHY12_C1_V02_CHAIN","member_count":1,"source_ids":["PHY12_P08_V02"],"pages":["P08"],"context_codes":["C1"],"type_codes":["H"],"retrieve_policy":"RETURN_ALL_MEMBERS","state":"FROZEN"}

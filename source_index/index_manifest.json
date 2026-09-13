@@ -1,0 +1,46 @@
+{
+  "schema": "sourceguard.runtime_source_index.v1",
+  "state": "FROZEN",
+  "source_units_file": "source_index/source_units.jsonl",
+  "source_units_sha256": "594d202448867b5fed799ffa878b1cf44563aef92a11cabb54dff05dff257609",
+  "content_chains_file": "source_index/content_chains.jsonl",
+  "content_chains_sha256": "2a508f184a88f0b7fffd7c1e098ebfdbbbcc96ddbe8a5b290ed8caf1dea0567d",
+  "source_unit_count": 13,
+  "content_chain_count": 13,
+  "input_artifacts": [
+    {
+      "path": "gold/page08/PAGE08_GOLD_LABEL_CONTEXT_CHAIN_ADDENDUM_V1.json",
+      "sha256": "3b5f92582990492b559759318b91582e79ca4bc433f8fa31a4c6a2c61b08f192"
+    },
+    {
+      "path": "frozen/page91/label/PAGE91_LABEL_CONTEXT_CHAIN_V1.json",
+      "sha256": "18e84b316ad3003eefb5ae52d495fbcd8affe499db24d1d32520675aa49bc596"
+    },
+    {
+      "path": "manifests/SOURCEGUARD_SOURCE_INVENTORY_V1.json",
+      "sha256": "919edaa74c43abc48f7b1767e9a8c003ee990867c5a155c20b464f2a01ebbf0c"
+    },
+    {
+      "path": "rules/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+      "sha256": "03337cecd9beec360b23560dcd4672e4bcaffbd3df047a3db67c01a9479e0be3"
+    }
+  ],
+  "runtime_policy": {
+    "question_generation_reads": "source_units.jsonl",
+    "source_retrieval_reads": "source_units.jsonl + content_chains.jsonl",
+    "same_chain_retrieval": "RETURN_ALL_MEMBERS",
+    "heavy_binary_storage": "GOOGLE_DRIVE_ONLY",
+    "source_truth": "DRIVE_ORIGINAL_PLUS_FROZEN_GEOMETRY"
+  },
+  "git_commit_allowed": true,
+  "human_decision": "CHOT_RUNTIME_INDEX",
+  "frozen_at_utc": "2026-09-13T07:41:57Z",
+  "freeze_policy": {
+    "source_units_immutable": true,
+    "content_chains_immutable": true,
+    "heavy_sources_external": true,
+    "page08_gold_modified": false,
+    "page91_frozen_modified": false,
+    "runtime_retrieval_policy": "RETURN_ALL_MEMBERS_OF_CONTENT_CHAIN"
+  }
+}
