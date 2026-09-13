@@ -1,0 +1,75 @@
+# ============================================================
+# SOURCEGUARD — GIT IGNORE
+# Heavy source/evidence files remain on Google Drive.
+# ============================================================
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Notebook temporary
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.token
+*.secret
+credentials*
+secrets*
+
+# Temporary / staging
+STAGING/
+staging/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Review-only renders
+**/REVIEW_ONLY/
+**/*REVIEW*.png
+**/*AUDIT*.png
+
+# Heavy image/video/audio files
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+
+# Large document/data binaries
+*.pdf
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# ML / binary artifacts
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.bin
+
+# Local Google Drive source datasets are NEVER copied here
+source_data/
+raw_data/
+datasets/
+assets/source/
+assets/review/
