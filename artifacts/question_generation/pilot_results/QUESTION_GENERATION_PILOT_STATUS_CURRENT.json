@@ -1,0 +1,72 @@
+{
+  "schema": "examtrust.question_generation.pilot_status.current.v1",
+  "generated_at_utc": "2026-09-13T18:54:12Z",
+  "historical_manifest_preserved": true,
+  "historical_manifest": {
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/QUESTION_GENERATION_PILOT_MANIFEST_V1.json",
+    "sha256": "3d818a433ab6153a687975c92b7b8976bd3a90eae8e6aeddcf80b076f2f373b2"
+  },
+  "question_contracts_preserved": true,
+  "question_contracts": {
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/02_CONTRACTS/QUESTION_CONTRACTS_V1_REVIEW.json",
+    "sha256": "606600cc6acd0cd38b98f6b22d62b48a53db3cd5c88d12199c17764a68496880"
+  },
+  "pilot_state": "IN_PROGRESS",
+  "planned_items": 6,
+  "completed_reviewed_items": 2,
+  "ready_for_use_items": 2,
+  "completed_slots": [
+    "Q1",
+    "Q2"
+  ],
+  "remaining_slots": [
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ],
+  "final_acceptance": null,
+  "acceptance_state": "NOT_EVALUATED",
+  "full_pilot_pass_claimed": false,
+  "runtime_generation_model": "gemini-3.6-flash",
+  "q1": {
+    "contract_id": "QC_PILOT_01",
+    "scope_type": "NON_EXPANDED",
+    "level": "UNDERSTAND",
+    "source_ids": [
+      "PHY12_P08_G01"
+    ],
+    "teacher_decision": "EDITED_APPROVED",
+    "ready_for_use": true,
+    "final_question": "Khi các phân tử nhận được càng nhiều năng lượng, chuyển động, khoảng cách trung bình và lực liên kết giữa chúng thay đổi như thế nào?",
+    "final_answer": "A",
+    "teacher_review_sha256": "b3d1d6d25849e037961c3091853532cb852b31d9b2c2373e51f48682e7b377bd",
+    "generated_artifact_sha256": "8ff649ed364824b84a48580abde032f02ad295935e4139b2834954e0d40ea7b1",
+    "raw_response_sha256": "579a4eef64041135fe75a7ec397853386b2733b70039499c5589589cf35dae28",
+    "review_history_manifest_sha256": "8ce2d57ef5637f24e31e3d9e870e861d535b50792075a240f519b5a828c7102a"
+  },
+  "q2": {
+    "contract_id": "QC_PILOT_02",
+    "scope_type": "NON_EXPANDED",
+    "level": "APPLY",
+    "source_ids": [
+      "PHY12_P08_G01",
+      "PHY12_P08_G02"
+    ],
+    "teacher_decision": "APPROVED",
+    "ready_for_use": true,
+    "final_question": "Xét các phân tử ở gần mặt thoáng của một lượng chất lỏng. Khi các phân tử này va chạm với các phân tử khác và nhận được thêm năng lượng, diễn biến nào sau đây giải thích đúng quá trình thoát khỏi chất lỏng của chúng?",
+    "final_answer": "A",
+    "teacher_review_sha256": "bb6619d31ac5d73b976d498339e5310a0efaa0e7e9cc4197fd1ea67d0ec24599",
+    "generated_artifact_sha256": "fbd8e92923270b690d08f1d117ac96a7b12ebd31bb39985e842183a786441731",
+    "raw_response_sha256": "17a7affddfe6c23969b5ffd4f0472878c532df5143e7542e45c533356eac425f",
+    "review_history_manifest_sha256": "ce89789ef3a039903c83a165155f492c0c0d83e72e818fb8fe235e5a3b99ae3f"
+  },
+  "governance": {
+    "historical_artifacts_mutated": false,
+    "question_regenerated": false,
+    "sourceguard_mutated": false,
+    "freeze": false,
+    "checkpoint": false
+  }
+}

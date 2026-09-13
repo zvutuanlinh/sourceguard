@@ -1,0 +1,16 @@
+{
+  "schema": "examtrust.question_generation.acceptance_report.v1",
+  "generated_at_utc": "2026-09-13T18:54:12Z",
+  "state": "NOT_EVALUATED",
+  "planned_items": 6,
+  "reviewed_items": 2,
+  "ready_for_use_items": 2,
+  "remaining_slots": [
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ],
+  "final_acceptance": null,
+  "reason": "Final pilot acceptance cannot be evaluated until all six planned matrix slots Q1-Q6 complete generation, validation and teacher review."
+}

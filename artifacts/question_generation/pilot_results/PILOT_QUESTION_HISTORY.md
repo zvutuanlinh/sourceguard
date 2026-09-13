@@ -1,20 +1,21 @@
 # ExamTrust AI — Pilot Question History
 
-> Báo cáo đọc nhanh từ artifact thật đã được lưu trong lịch sử phát triển. JSON/JSONL và Teacher Review artifact vẫn là nguồn dữ liệu chuẩn; Markdown chỉ là lớp trình bày cho con người.
+> Bằng chứng đọc nhanh từ artifact thật của pipeline. JSON/JSONL và Teacher Review artifact vẫn là dữ liệu chuẩn; Markdown là lớp trình bày để giáo viên và Ban tổ chức kiểm tra.
 
-- Generated at: `2026-09-13T14:46:17`
+- Generated at: `2026-09-13T18:44:31`
 - Reviewed items: `2`
 - Question regeneration: `NO`
 - Source mutation: `NO`
+- External knowledge used: `NO`
 - Freeze: `NO`
 - New Git commit: `NO`
 
 ## Pilot Summary
 
-| Item | Scope | Level | Teacher Decision | Ready for Use | Sources | Git Commit |
-|---|---|---|---|---|---|---|
-| Q1 | NON_EXPANDED | UNDERSTAND | EDITED_APPROVED | YES | PHY12_P08_G01 | `1fb4ccb8e1bb` |
-| Q2 | NON_EXPANDED | APPLY | APPROVED | YES | PHY12_P08_G01, PHY12_P08_G02 | `377b4e653219` |
+| Item | Scope | Level | Teacher Decision | Ready for Use | Sources |
+|---|---|---|---|---|---|
+| Q1 | NON_EXPANDED | UNDERSTAND | EDITED_APPROVED | YES | PHY12_P08_G01 |
+| Q2 | NON_EXPANDED | APPLY | APPROVED | YES | PHY12_P08_G01, PHY12_P08_G02 |
 
 ---
 
@@ -24,7 +25,6 @@
 - Model: `gemini-3.6-flash`
 - Teacher Decision: `EDITED_APPROVED`
 - Ready for Use: `YES`
-- Git Commit: `1fb4ccb8e1bb4748845e5abcd9b91e2cb64111f3`
 
 ### Sources
 
@@ -59,10 +59,10 @@ Khi các phân tử nhận được nhiều năng lượng hơn, chúng chuyển
 - Generated SHA256: `8ff649ed364824b84a48580abde032f02ad295935e4139b2834954e0d40ea7b1`
 - Teacher review: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q1_review/QC_PILOT_01_TEACHER_REVIEW_V1.json`
 - Teacher review SHA256: `b3d1d6d25849e037961c3091853532cb852b31d9b2c2373e51f48682e7b377bd`
-- Raw response: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q1_review/QC_PILOT_01_RAW_MODEL_RESPONSE_V1.txt`
+- Raw model response: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q1_review/QC_PILOT_01_RAW_MODEL_RESPONSE_V1.txt`
 - Raw response SHA256: `579a4eef64041135fe75a7ec397853386b2733b70039499c5589589cf35dae28`
-- History manifest: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q1_review/Q1_REVIEW_HISTORY_MANIFEST.json`
-- History manifest SHA256: `8ce2d57ef5637f24e31e3d9e870e861d535b50792075a240f519b5a828c7102a`
+- Review history manifest: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q1_review/Q1_REVIEW_HISTORY_MANIFEST.json`
+- Manifest SHA256: `8ce2d57ef5637f24e31e3d9e870e861d535b50792075a240f519b5a828c7102a`
 
 ---
 
@@ -72,7 +72,6 @@ Khi các phân tử nhận được nhiều năng lượng hơn, chúng chuyển
 - Model: `gemini-3.6-flash`
 - Teacher Decision: `APPROVED`
 - Ready for Use: `YES`
-- Git Commit: `377b4e653219885e1a75c8696140f6e75e679fe2`
 
 ### Sources
 
@@ -109,7 +108,7 @@ Khi nhận thêm năng lượng từ va chạm, các phân tử chuyển động
 - Generated SHA256: `fbd8e92923270b690d08f1d117ac96a7b12ebd31bb39985e842183a786441731`
 - Teacher review: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q2_review/QC_PILOT_02_TEACHER_REVIEW_V1.json`
 - Teacher review SHA256: `bb6619d31ac5d73b976d498339e5310a0efaa0e7e9cc4197fd1ea67d0ec24599`
-- Raw response: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q2_review/QC_PILOT_02_RAW_MODEL_RESPONSE_V1.txt`
+- Raw model response: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q2_review/QC_PILOT_02_RAW_MODEL_RESPONSE_V1.txt`
 - Raw response SHA256: `17a7affddfe6c23969b5ffd4f0472878c532df5143e7542e45c533356eac425f`
-- History manifest: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q2_review/Q2_REVIEW_HISTORY_MANIFEST.json`
-- History manifest SHA256: `ce89789ef3a039903c83a165155f492c0c0d83e72e818fb8fe235e5a3b99ae3f`
+- Review history manifest: `/content/drive/MyDrive/SourceGuard_Git/sourceguard/artifacts/question_generation/pilot_q2_review/Q2_REVIEW_HISTORY_MANIFEST.json`
+- Manifest SHA256: `ce89789ef3a039903c83a165155f492c0c0d83e72e818fb8fe235e5a3b99ae3f`

@@ -1,0 +1,21 @@
+{
+  "schema": "examtrust.question_generation.pilot_summary.v1",
+  "generated_at_utc": "2026-09-13T18:54:12Z",
+  "state": "IN_PROGRESS",
+  "planned_items": 6,
+  "completed_reviewed_items": 2,
+  "ready_for_use_items": 2,
+  "completed_slots": [
+    "Q1",
+    "Q2"
+  ],
+  "remaining_slots": [
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ],
+  "full_pilot_pass": null,
+  "acceptance_evaluation_ready": false,
+  "note": "Q1 and Q2 have completed generation, source traceability and teacher review. Q3-Q6 are not yet completed. No full-pilot PASS claim is made."
+}

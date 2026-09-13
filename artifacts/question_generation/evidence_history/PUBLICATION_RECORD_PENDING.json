@@ -1,0 +1,26 @@
+{
+  "schema": "examtrust.evidence_publication_record.v1",
+  "generated_at_utc": "2026-09-13T18:59:32Z",
+  "publication_state": "PENDING_GIT_COMMIT",
+  "git_branch": "main",
+  "git_commit": null,
+  "remote_verified": false,
+  "historical_artifacts_mutated": false,
+  "question_regenerated": false,
+  "sourceguard_mutated": false,
+  "pilot_state": "IN_PROGRESS",
+  "completed_reviewed_items": 2,
+  "planned_items": 6,
+  "completed_slots": [
+    "Q1",
+    "Q2"
+  ],
+  "remaining_slots": [
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ],
+  "acceptance_state": "NOT_EVALUATED",
+  "note": "This record is intentionally PENDING until the current evidence bundle is committed and the remote Git HEAD is verified."
+}
