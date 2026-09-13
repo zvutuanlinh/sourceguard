@@ -1,0 +1,43 @@
+{
+  "schema": "sourceguard.retrieval_runtime.checkpoint.v1",
+  "state": "FROZEN_GOOD_STATE",
+  "human_decision": "CHOT_RETRIEVAL_RUNTIME",
+  "created_at_utc": "2026-09-13T07:50:17Z",
+  "retrieval_runtime": {
+    "path": "code/sourceguard_retrieval.py",
+    "sha256": "3a2f07dceb385d2a6fb914a71211779d251a63d957f6cf47d30ca07d9977217e",
+    "reviewed_commit": "bdfb9c63bbf8bbfa7c9ba3395a7cbff830762a67"
+  },
+  "regression_test": {
+    "path": "tests/test_sourceguard_retrieval.py",
+    "sha256": "8cebda8c847bd05eafeb77fb3444d7b8bf4aa33fb3366b1990c7ea1792c1ecfe",
+    "result": "PASS"
+  },
+  "runtime_index": {
+    "manifest_path": "source_index/index_manifest.json",
+    "manifest_sha256": "dfdbbbf68301d3f3726fa59c4f5937dcf882e64430d7d1ff1d3200033d8fe58d",
+    "state": "FROZEN",
+    "source_unit_count": 13,
+    "content_chain_count": 13
+  },
+  "retrieval_contract": {
+    "source_truth": "DRIVE_ORIGINAL_PLUS_FROZEN_GEOMETRY",
+    "get_source": true,
+    "get_chain": true,
+    "extract_components": true,
+    "build_source_card": true,
+    "extract_chain": true,
+    "find_sources": true,
+    "ocr": false,
+    "geometry_mutation": false,
+    "bbox_expansion": false,
+    "resize_source_component": false,
+    "same_chain_retrieval": "RETURN_ALL_MEMBERS"
+  },
+  "governance": {
+    "page08_gold_modified": false,
+    "page91_frozen_modified": false,
+    "runtime_index_modified": false,
+    "heavy_files_committed": false
+  }
+}
