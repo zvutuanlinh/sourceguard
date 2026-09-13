@@ -1,0 +1,28 @@
+{
+  "schema": "examtrust.evidence_publication_receipt.v1",
+  "created_at_utc": "2026-09-13T19:07:07Z",
+  "publication_state": "EVIDENCE_BUNDLE_REMOTE_VERIFIED",
+  "git_branch": "main",
+  "evidence_bundle_commit": "9182eecffebbc27abc4a430789b72570cf36cbd4",
+  "evidence_bundle_remote_verified": true,
+  "remote_ref": "refs/heads/main",
+  "pilot_state": "IN_PROGRESS",
+  "completed_reviewed_items": 2,
+  "planned_items": 6,
+  "completed_slots": [
+    "Q1",
+    "Q2"
+  ],
+  "remaining_slots": [
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ],
+  "acceptance_state": "NOT_EVALUATED",
+  "historical_artifacts_mutated": false,
+  "question_regenerated": false,
+  "sourceguard_mutated": false,
+  "notebook_binary_committed_to_git": false,
+  "note": "This receipt references the already-created and remote-verified evidence bundle commit. It does not self-reference the commit containing this receipt."
+}

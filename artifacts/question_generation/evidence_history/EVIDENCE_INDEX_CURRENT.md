@@ -7,7 +7,9 @@
 - Remaining slots: `Q3, Q4, Q5, Q6`
 - Final acceptance: `NOT_EVALUATED`
 - Historical artifacts mutated: `NO`
-- Publication Git commit: `PENDING`
+- Evidence bundle Git commit: `9182eecffebbc27abc4a430789b72570cf36cbd4`
+- Evidence bundle remote verified: `YES`
+- Publication receipt: `09_EVIDENCE_HISTORY/PUBLICATION_RECEIPT.json`
 
 ## 1. Historical baseline
 
