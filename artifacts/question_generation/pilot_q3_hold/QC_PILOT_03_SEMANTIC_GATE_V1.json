@@ -1,0 +1,67 @@
+{
+  "schema": "examtrust.q3.semantic_gate.v1",
+  "created_at_utc": "2026-09-13T20:36:30.529830+00:00",
+  "item_id": "QC_PILOT_03",
+  "pilot_slot": "Q3",
+  "scope_type": "NON_EXPANDED",
+  "level": "ADVANCED",
+  "source_ids": [
+    "PHY12_P08_G01",
+    "PHY12_P08_G02",
+    "PHY12_P08_N01"
+  ],
+  "minimum_reasoning_steps": 3,
+  "minimum_required_relations": 3,
+  "structural_gate": "PASS",
+  "source_selection_state": "VALID_SELECTION",
+  "semantic_gate": "HOLD_NO_VALID_SOURCE_SET",
+  "generation_allowed": false,
+  "question_generated": false,
+  "teacher_status": "UNVERIFIED",
+  "ready_for_use": false,
+  "semantic_review": {
+    "R1_source_sufficiency": {
+      "decision": "NOT_PROVEN_FOR_ADVANCED",
+      "reason": "All three frozen source units exist, but existence alone does not demonstrate that all three are necessary to solve one valid ADVANCED item."
+    },
+    "R2_three_necessary_steps": {
+      "decision": "NOT_PROVEN",
+      "reason": "Current reviewed evidence demonstrates G01 alone for UNDERSTAND and G01+G02 for APPLY. A genuinely necessary third step contributed by N01 has not yet been established."
+    },
+    "R3_no_shortcut": {
+      "decision": "NOT_PROVEN",
+      "reason": "Without a distinct indispensable N01 relation, a proposed item may collapse to the existing one- or two-step reasoning already supported by G01/G02."
+    },
+    "R4_each_step_source_bound": {
+      "decision": "PARTIAL",
+      "reason": "G01 and G02 have demonstrated Step-Source usage in reviewed items; an indispensable third step mapped to N01 is not yet demonstrated."
+    },
+    "R5_non_expanded_compliance": {
+      "decision": "POSSIBLE_BUT_INSUFFICIENT",
+      "reason": "The source set is same-context and closed-source compatible, but this does not by itself establish ADVANCED cognitive sufficiency."
+    }
+  },
+  "hold_reason_code": "ADVANCED_THIRD_RELATION_NOT_PROVEN",
+  "hold_reason": "Q3 contract requires >=3 genuinely necessary reasoning steps/relations with no artificial complexity and no shorter collapsing solution. Current evidence does not yet prove that PHY12_P08_N01 contributes an indispensable third relation. Therefore generation is blocked.",
+  "next_allowed_actions": [
+    "Human semantic review of the actual PHY12_P08_N01 frozen crop to identify a distinct indispensable relation.",
+    "If such a relation exists, document a 3-step Minimum Solution Path and Step-Source Map before generation.",
+    "If it does not exist, retain HOLD_NO_VALID_SOURCE_SET or explicitly revise the Q3 source selection/contract through the normal review process."
+  ],
+  "evidence": {
+    "source_sufficiency_preflight_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/03_SOURCE_REVIEW/Q3/QC_PILOT_03_SOURCE_SUFFICIENCY_REVIEW_V1.json",
+    "source_sufficiency_preflight_sha256": "1b0af3dde5e8aa903b3628de001547b775904d2fdef9733e72a1f74a7867234b",
+    "contracts_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/02_CONTRACTS/QUESTION_CONTRACTS_V1_REVIEW.json",
+    "contracts_sha256": "606600cc6acd0cd38b98f6b22d62b48a53db3cd5c88d12199c17764a68496880"
+  },
+  "governance": {
+    "contract_modified": false,
+    "page08_gold_modified": false,
+    "runtime_index_modified": false,
+    "sourceguard_modified": false,
+    "git_modified": false,
+    "checkpoint_created": false,
+    "freeze_created": false,
+    "question_generation_called": false
+  }
+}

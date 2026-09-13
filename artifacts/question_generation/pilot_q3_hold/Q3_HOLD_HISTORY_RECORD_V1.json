@@ -1,0 +1,42 @@
+{
+  "schema": "examtrust.qg.history.q3_hold.v1",
+  "created_at_utc": "2026-09-13T20:45:01.660256+00:00",
+  "item_id": "QC_PILOT_03",
+  "pilot_slot": "Q3",
+  "scope_type": "NON_EXPANDED",
+  "level": "ADVANCED",
+  "source_ids": [
+    "PHY12_P08_G01",
+    "PHY12_P08_G02",
+    "PHY12_P08_N01"
+  ],
+  "minimum_reasoning_steps": 3,
+  "minimum_required_relations": 3,
+  "structural_gate": "PASS",
+  "source_selection_state": "VALID_SELECTION",
+  "semantic_gate": "HOLD_NO_VALID_SOURCE_SET",
+  "hold_code": "ADVANCED_THIRD_RELATION_NOT_PROVEN",
+  "generation_allowed": false,
+  "question_generated": false,
+  "teacher_status": "UNVERIFIED",
+  "ready_for_use": false,
+  "pilot_item_file_modified": false,
+  "reason": "The source set is structurally valid, but the current evidence does not prove that PHY12_P08_N01 contributes an indispensable third reasoning relation. Generation is blocked to avoid artificial ADVANCED complexity or a shorter collapsing solution.",
+  "evidence": {
+    "semantic_gate_json": "03_SOURCE_REVIEW/Q3/QC_PILOT_03_SEMANTIC_GATE_V1.json",
+    "semantic_gate_json_sha256": "53072a6625f1e8b7ce4e23b33931563caab75f45163ffc7d18a95a4919c22ef0",
+    "semantic_gate_md": "03_SOURCE_REVIEW/Q3/QC_PILOT_03_SEMANTIC_GATE_V1.md",
+    "semantic_gate_md_sha256": "cf52fa7584bcf45490bc2eff5e76e0758ea7304acae5edca7b43cf236558b5b2",
+    "pilot_question_history": "08_PILOT_RESULTS/PILOT_QUESTION_HISTORY.md",
+    "pilot_question_history_sha256": "05a1452057261d3268af17d046836d938d39903d4f255a87b6db16cdd170d167"
+  },
+  "governance": {
+    "page08_gold_modified": false,
+    "runtime_index_modified": false,
+    "question_contract_modified": false,
+    "pilot_6_items_modified": false,
+    "checkpoint_created": false,
+    "freeze_created": false,
+    "force_push": false
+  }
+}
