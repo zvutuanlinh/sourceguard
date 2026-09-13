@@ -1,0 +1,31 @@
+{
+  "generation_status": "GENERATED",
+  "question": "Xét các phân tử ở gần mặt thoáng của một lượng chất lỏng. Khi các phân tử này va chạm với các phân tử khác và nhận được thêm năng lượng, diễn biến nào sau đây giải thích đúng quá trình thoát khỏi chất lỏng của chúng?",
+  "options": {
+    "A": "Chúng chuyển động hỗn loạn nhanh hơn, đạt động năng đủ lớn để thắng lực liên kết của các phân tử chất lỏng khác và thoát khỏi mặt thoáng thành thể hơi.",
+    "B": "Chúng chuyển động hỗn loạn chậm lại, khoảng cách trung bình giảm dần nên lực liên kết tăng lên và giữ chúng lại ở mặt thoáng.",
+    "C": "Chúng làm khoảng cách trung bình giảm đi, lực liên kết yếu đi và chìm xuống đáy chất lỏng dưới dạng bọt khí.",
+    "D": "Chúng làm thể tích giảm xuống, tăng lực liên kết với các phân tử xung quanh và lập tức đông đặc thành chất rắn."
+  },
+  "correct_answer": "A",
+  "short_explanation": "Khi nhận thêm năng lượng từ va chạm, các phân tử chuyển động hỗn loạn nhanh hơn. Đối với các phân tử ở gần mặt thoáng, động năng đủ lớn giúp chúng thắng lực liên kết của các phân tử chất lỏng khác để thoát ra khỏi mặt thoáng trở thành phân tử ở thể hơi.",
+  "minimum_solution_path": [
+    "Bước 1: Xác định mối quan hệ khi các phân tử nhận năng lượng: các phân tử chuyển động hỗn loạn càng nhanh (động năng tăng).",
+    "Bước 2: Áp dụng điều kiện chuyển thể ở mặt thoáng chất lỏng: các phân tử ở gần mặt thoáng có động năng đủ lớn sẽ thắng lực liên kết của các phân tử chất lỏng khác và thoát ra khỏi mặt thoáng trở thành phân tử ở thể hơi."
+  ],
+  "step_source_map": [
+    {
+      "step": 1,
+      "source_ids": [
+        "PHY12_P08_G01"
+      ]
+    },
+    {
+      "step": 2,
+      "source_ids": [
+        "PHY12_P08_G02"
+      ]
+    }
+  ],
+  "external_knowledge_used": false
+}

@@ -1,0 +1,525 @@
+{
+  "schema": "examtrust.question_contract.collection.v1",
+  "state": "REVIEW_ONLY",
+  "created_at_utc": "2026-09-13T09:01:22Z",
+  "source_selection": {
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/01_SOURCE_SELECTION/Q1_Q6_SOURCE_SELECTION_V2_REVIEW.json",
+    "sha256": "e6a84064664a7f6d77b426903ea1f935cef57fc4fb0001811837966e509e7908"
+  },
+  "ruleset": {
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/00_RULES/QUESTION_GENERATION_RULESET_V1_REVIEW.json",
+    "sha256": "4c270c31996d42a81281c9d6739ba5f40b985d71b81f458c20182b18956b7780"
+  },
+  "contract_count": 6,
+  "contracts": [
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_01",
+      "pilot_slot": "Q1",
+      "scope_type": "NON_EXPANDED",
+      "level": "UNDERSTAND",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "C1",
+      "source_ids": [
+        "PHY12_P08_G01"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P08_G01",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P08_G01"
+      ],
+      "supporting_source_ids": [],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 1,
+      "minimum_reasoning_steps": 1,
+      "minimum_required_relations": 1,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    },
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_02",
+      "pilot_slot": "Q2",
+      "scope_type": "NON_EXPANDED",
+      "level": "APPLY",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "C1",
+      "source_ids": [
+        "PHY12_P08_G01",
+        "PHY12_P08_G02"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P08_G01",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P08_G02",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P08_G01"
+      ],
+      "supporting_source_ids": [
+        "PHY12_P08_G02"
+      ],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 2,
+      "minimum_reasoning_steps": 2,
+      "minimum_required_relations": 2,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    },
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_03",
+      "pilot_slot": "Q3",
+      "scope_type": "NON_EXPANDED",
+      "level": "ADVANCED",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "C1",
+      "source_ids": [
+        "PHY12_P08_G01",
+        "PHY12_P08_G02",
+        "PHY12_P08_N01"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P08_G01",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P08_G02",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P08_N01",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "C1",
+          "visual_needed": false
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P08_G01"
+      ],
+      "supporting_source_ids": [
+        "PHY12_P08_G02",
+        "PHY12_P08_N01"
+      ],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 3,
+      "minimum_reasoning_steps": 3,
+      "minimum_required_relations": 3,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    },
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_04",
+      "pilot_slot": "Q4",
+      "scope_type": "SOURCE_BOUNDED_EXPANDED",
+      "level": "UNDERSTAND",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "B21",
+      "source_ids": [
+        "PHY12_P91_R07"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P91_R07",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "B21",
+          "visual_needed": false
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P91_R07"
+      ],
+      "supporting_source_ids": [],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 1,
+      "minimum_reasoning_steps": 1,
+      "minimum_required_relations": 1,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    },
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_05",
+      "pilot_slot": "Q5",
+      "scope_type": "SOURCE_BOUNDED_EXPANDED",
+      "level": "APPLY",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "B21",
+      "source_ids": [
+        "PHY12_P91_R03",
+        "PHY12_P91_R07"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P91_R03",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "TN",
+          "usage_class": "EXPERIMENT_SOURCE",
+          "context_code": "B21",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P91_R07",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "B21",
+          "visual_needed": false
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P91_R03"
+      ],
+      "supporting_source_ids": [
+        "PHY12_P91_R07"
+      ],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 2,
+      "minimum_reasoning_steps": 2,
+      "minimum_required_relations": 2,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    },
+    {
+      "schema": "examtrust.question_contract.v1",
+      "state": "REVIEW_ONLY",
+      "contract_id": "QC_PILOT_06",
+      "pilot_slot": "Q6",
+      "scope_type": "SOURCE_BOUNDED_EXPANDED",
+      "level": "ADVANCED",
+      "question_type": "SINGLE_CHOICE",
+      "context_code": "B21",
+      "source_ids": [
+        "PHY12_P91_R03",
+        "PHY12_P91_R07",
+        "PHY12_P91_V03"
+      ],
+      "source_roles": [
+        {
+          "source_id": "PHY12_P91_R03",
+          "role": "PRIMARY_KNOWLEDGE",
+          "source_type": "TN",
+          "usage_class": "EXPERIMENT_SOURCE",
+          "context_code": "B21",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P91_R07",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "ND",
+          "usage_class": "CORE_KNOWLEDGE",
+          "context_code": "B21",
+          "visual_needed": false
+        },
+        {
+          "source_id": "PHY12_P91_V03",
+          "role": "SUPPORTING_KNOWLEDGE",
+          "source_type": "H",
+          "usage_class": "VISUAL_SOURCE",
+          "context_code": "B21",
+          "visual_needed": true
+        }
+      ],
+      "primary_source_ids": [
+        "PHY12_P91_R03"
+      ],
+      "supporting_source_ids": [
+        "PHY12_P91_R07",
+        "PHY12_P91_V03"
+      ],
+      "pattern_source_ids": [],
+      "enrichment_source_ids": [],
+      "source_count": 3,
+      "minimum_reasoning_steps": 3,
+      "minimum_required_relations": 3,
+      "reasoning_plan_required": true,
+      "minimum_solution_path_required": true,
+      "step_source_map_required": true,
+      "all_required_steps_must_map_to_source": true,
+      "external_knowledge_allowed": false,
+      "outside_source_inference_allowed": false,
+      "new_external_fact_allowed": false,
+      "new_external_formula_allowed": false,
+      "new_external_law_allowed": false,
+      "new_external_constant_allowed": false,
+      "undeclared_source_use_allowed": false,
+      "verbatim_copy_allowed": false,
+      "question_must_be_fully_answerable_from_sources": true,
+      "answer_must_be_fully_supported_by_sources": true,
+      "artificial_complexity_allowed": false,
+      "evidence_required": true,
+      "actual_frozen_source_preview_required": true,
+      "evidence_source_provider": "sourceguard_retrieval.py",
+      "llm_rewritten_source_as_primary_evidence": false,
+      "answer_schema": {
+        "option_count": 4,
+        "correct_answer_count": 1,
+        "duplicate_options_allowed": false,
+        "empty_options_allowed": false
+      },
+      "teacher_approval_required": true,
+      "ready_for_use_before_teacher_approval": false,
+      "teacher_actions": [
+        "APPROVE",
+        "EDIT_AND_APPROVE",
+        "RETURN"
+      ],
+      "llm_may_select_source": false,
+      "llm_may_change_scope_type": false,
+      "llm_may_change_level": false,
+      "llm_may_change_source_ids": false,
+      "llm_may_change_context": false,
+      "generation_status": "NOT_STARTED",
+      "validation_status": "NOT_STARTED",
+      "teacher_status": "UNVERIFIED",
+      "ready_for_use": false
+    }
+  ],
+  "governance": {
+    "llm_called": false,
+    "questions_generated": false,
+    "sourceguard_mutated": false,
+    "freeze_allowed": false,
+    "git_allowed": false
+  }
+}

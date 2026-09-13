@@ -1,0 +1,117 @@
+{
+  "schema": "examtrust.question_generation.generated_item.v1",
+  "state": "REVIEW_ONLY",
+  "created_at_utc": "2026-09-13T09:37:27Z",
+  "contract": {
+    "contract_id": "QC_PILOT_02",
+    "pilot_slot": "Q2",
+    "scope_type": "NON_EXPANDED",
+    "level": "APPLY",
+    "question_type": "SINGLE_CHOICE",
+    "minimum_reasoning_steps": 2,
+    "minimum_required_relations": 2
+  },
+  "generation": {
+    "provider": "Google Gemini API",
+    "model": "gemini-3.6-flash",
+    "prompt_sha256": "e6a7bd8e1c7d285315f9435352eebe233a6b08afdcc2f1103a460993e744add6"
+  },
+  "source_evidence": [
+    {
+      "source_id": "PHY12_P08_G01",
+      "display_label": "C1|P08|G01|ND",
+      "preview_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/06_VERIFICATION_PACK/source_previews/QC_PILOT_02_PHY12_P08_G01.png",
+      "preview_sha256": "7ed635ec81c2595af6199ffc3c4b418cb938ef3a2c116d3a1acb85f2ea46a170"
+    },
+    {
+      "source_id": "PHY12_P08_G02",
+      "display_label": "C1|P08|G02|ND",
+      "preview_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/06_VERIFICATION_PACK/source_previews/QC_PILOT_02_PHY12_P08_G02.png",
+      "preview_sha256": "70e4a147c0e072eb36d2e7babfbbcfbeab49ad2d698264a978edb46f4992a5c3"
+    }
+  ],
+  "generated_item": {
+    "generation_status": "GENERATED",
+    "question": "Xét các phân tử ở gần mặt thoáng của một lượng chất lỏng. Khi các phân tử này va chạm với các phân tử khác và nhận được thêm năng lượng, diễn biến nào sau đây giải thích đúng quá trình thoát khỏi chất lỏng của chúng?",
+    "options": {
+      "A": "Chúng chuyển động hỗn loạn nhanh hơn, đạt động năng đủ lớn để thắng lực liên kết của các phân tử chất lỏng khác và thoát khỏi mặt thoáng thành thể hơi.",
+      "B": "Chúng chuyển động hỗn loạn chậm lại, khoảng cách trung bình giảm dần nên lực liên kết tăng lên và giữ chúng lại ở mặt thoáng.",
+      "C": "Chúng làm khoảng cách trung bình giảm đi, lực liên kết yếu đi và chìm xuống đáy chất lỏng dưới dạng bọt khí.",
+      "D": "Chúng làm thể tích giảm xuống, tăng lực liên kết với các phân tử xung quanh và lập tức đông đặc thành chất rắn."
+    },
+    "correct_answer": "A",
+    "short_explanation": "Khi nhận thêm năng lượng từ va chạm, các phân tử chuyển động hỗn loạn nhanh hơn. Đối với các phân tử ở gần mặt thoáng, động năng đủ lớn giúp chúng thắng lực liên kết của các phân tử chất lỏng khác để thoát ra khỏi mặt thoáng trở thành phân tử ở thể hơi.",
+    "minimum_solution_path": [
+      "Bước 1: Xác định mối quan hệ khi các phân tử nhận năng lượng: các phân tử chuyển động hỗn loạn càng nhanh (động năng tăng).",
+      "Bước 2: Áp dụng điều kiện chuyển thể ở mặt thoáng chất lỏng: các phân tử ở gần mặt thoáng có động năng đủ lớn sẽ thắng lực liên kết của các phân tử chất lỏng khác và thoát ra khỏi mặt thoáng trở thành phân tử ở thể hơi."
+    ],
+    "step_source_map": [
+      {
+        "step": 1,
+        "source_ids": [
+          "PHY12_P08_G01"
+        ]
+      },
+      {
+        "step": 2,
+        "source_ids": [
+          "PHY12_P08_G02"
+        ]
+      }
+    ],
+    "external_knowledge_used": false
+  },
+  "structural_validation": [
+    {
+      "check": "Question text exists",
+      "state": "PASS"
+    },
+    {
+      "check": "Exactly options A/B/C/D",
+      "state": "PASS"
+    },
+    {
+      "check": "Correct answer valid",
+      "state": "PASS"
+    },
+    {
+      "check": "APPLY minimum solution path >= 2",
+      "state": "PASS"
+    },
+    {
+      "check": "Q2 Step–Source Map has >= 2 steps",
+      "state": "PASS"
+    },
+    {
+      "check": "Step 1 has source evidence",
+      "state": "PASS"
+    },
+    {
+      "check": "Step 1 uses approved source only",
+      "state": "PASS"
+    },
+    {
+      "check": "Step 2 has source evidence",
+      "state": "PASS"
+    },
+    {
+      "check": "Step 2 uses approved source only",
+      "state": "PASS"
+    },
+    {
+      "check": "Student-facing question has no source/meta wording",
+      "state": "PASS"
+    }
+  ],
+  "warnings": [],
+  "teacher_status": "UNVERIFIED",
+  "ready_for_use": false,
+  "governance": {
+    "sourceguard_mutated": false,
+    "source_geometry_changed": false,
+    "source_content_changed": false,
+    "checkpoint_created": false,
+    "freeze": false,
+    "git": false
+  }
+}
