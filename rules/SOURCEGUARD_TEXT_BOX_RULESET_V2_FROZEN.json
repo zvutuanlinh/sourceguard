@@ -1,0 +1,131 @@
+{
+  "schema": "examtrust.sourceguard.text_box_ruleset.v2.frozen",
+  "created_at_utc": "2026-09-13T05:43:15Z",
+  "state": "FROZEN_HUMAN_VERIFIED_TEXT_BOX_RULESET",
+  "human_decision": "CHOT",
+  "architecture": [
+    "Container",
+    "Object",
+    "ReadingRegion",
+    "Anchor",
+    "ReadingLane",
+    "RegionGrowing",
+    "Validation",
+    "Render"
+  ],
+  "gold_base": {
+    "authority": "SOURCEGUARD_TEXT_RULESET_V1",
+    "path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_TEXT_RULESET_V1.json",
+    "sha256": "a866a70ee05c7be0036efb0c723a0b0a7083ff2699c52646248fb9b5bac355e2",
+    "policy_path": "/content/drive/MyDrive/test_examtrust/GOVERNANCE/SOURCEGUARD_TEXT_GOLD_FIRST_POLICY_V1.json",
+    "policy_sha256": "8474b0c403b3d7f4fb96efe5bc3320b16c7f88e94ca0fda291ac1297c179e140",
+    "immutable": true,
+    "rule": "Existing Page08 Gold behavior remains authoritative. Page91 extensions may only handle cases not already resolved by stronger Gold evidence."
+  },
+  "dispatch": {
+    "strongest_clear_signal_first": true,
+    "matched_rule": "USE",
+    "unmatched_rule": "SKIP",
+    "weaker_rule_after_stronger_resolution": "DO_NOT_OVERRIDE",
+    "no_confident_rule": "HOLD",
+    "gold_base_rewrite_allowed": false,
+    "page_specific_coordinate_allowed": false,
+    "region_id_as_generic_rule_allowed": false
+  },
+  "signal_priority": [
+    "STRUCTURAL_CONTAINER_OR_BORDER",
+    "EXPLICIT_OBJECT_OWNERSHIP_OR_NESTED_STRUCTURE",
+    "SEMANTIC_ANCHOR_HEADING_MARKER",
+    "TRUE_READINGLANE_OR_MATERIAL_WHITESPACE",
+    "PHYSICAL_LINE_CONTINUITY_AND_RHYTHM",
+    "RAW_OCR_GEOMETRY"
+  ],
+  "container_rule": {
+    "container_role": "STRUCTURAL_OWNERSHIP_METADATA",
+    "container_is_text_readingregion": false,
+    "container_bbox_is_text_bbox": false,
+    "container_bbox_is_render_bbox": false,
+    "container_usage": [
+      "establish structural ownership",
+      "separate independent content domains",
+      "prevent cross-container ReadingRegion growth"
+    ],
+    "after_ownership": "Text and Visual inside the Container are processed as separate objects/ReadingRegions."
+  },
+  "visual_rule": {
+    "verified_visual": "SKIP_ONLY",
+    "visual_edge_is_text_start": false,
+    "visual_edge_is_text_stop": false,
+    "visual_bbox_is_text_boundary": false,
+    "text_may_continue_around_visual": "YES only when no stronger Container/structure/lane boundary exists and actual reading continuity is proven."
+  },
+  "extensions": [
+    {
+      "id": "EXT01_REBUILD_FROM_ANCHOR_READINGLANE",
+      "trigger": "OLD_GEOMETRY_PROVEN_TO_CLIP_VALID_TEXT_FLOW",
+      "action": "Do not constrain search by old component/region bbox. Rebuild from semantic Anchor and current ReadingLane."
+    },
+    {
+      "id": "EXT02_LINE_LEVEL_GEOMETRY",
+      "trigger": "RAW_OCR_OBJECT_GEOMETRY_PROVEN_TOO_COARSE",
+      "action": "Resolve physical text-line geometry and use line envelopes for valid Render coverage."
+    },
+    {
+      "id": "EXT03_VISUAL_INTERRUPTED_CONTINUATION",
+      "trigger": "VERIFIED_VISUAL_INTERRUPTS_RECTANGULAR_SPACE BUT_NO_STRONGER_STRUCTURE_BOUNDARY_AND_TEXT_FLOW_CONTINUES",
+      "action": "Keep one logical ReadingRegion. Visual remains SKIP."
+    },
+    {
+      "id": "EXT04_UNOWNED_TRAILING_TEXT",
+      "trigger": "VALID_TRAILING_TEXT_NOT_CLAIMED_BY_VISUAL_OWNERSHIP",
+      "action": "Keep as ordinary Text continuation."
+    },
+    {
+      "id": "EXT05_ORPHAN_WITHOUT_NEW_START",
+      "trigger": "NO_NEW_START_AND_PREVIOUS_READING_FLOW_CONTINUES",
+      "action": "Attach to preceding logical ReadingRegion."
+    }
+  ],
+  "region_growing": {
+    "start": "VALID_SEMANTIC_OR_STRUCTURAL_ANCHOR",
+    "grow": "READING_ORDER_WITHIN_CURRENT_OWNERSHIP_DOMAIN",
+    "valid_stop": [
+      "new semantic anchor",
+      "new heading/title/marker at relevant structural level",
+      "materially distinct whitespace",
+      "true ReadingLane change",
+      "true Container/structure change"
+    ],
+    "invalid_stop": [
+      "verified visual edge alone",
+      "old historical seam",
+      "old bbox edge alone"
+    ]
+  },
+  "render": {
+    "geometry_source": "VALIDATED_TEXT_FLOW_AND_PHYSICAL_TEXT_LINES",
+    "old_bad_geometry_authoritative": false,
+    "fixed_pixel_patch": false,
+    "forced_shared_y": false,
+    "logical_region_must_be_rectangle": false,
+    "multiple_components_allowed": true,
+    "component_count_is_not_region_count": true
+  },
+  "governance": {
+    "page08_gold_immutable": true,
+    "page91_visual_frozen": true,
+    "page91_extensions_can_override_stronger_gold_signal": false,
+    "unmatched_rule_is_skipped": true,
+    "no_confident_match_returns_hold": true,
+    "generic_rule_may_use_page_id": false,
+    "generic_rule_may_use_region_id": false,
+    "generic_rule_may_use_fixed_page_coordinate": false
+  },
+  "not_yet_closed": [
+    "PAGE91_LABEL_CREATION_RULE",
+    "FULL_TEXT_PIPELINE",
+    "ENGINE_PROMOTION",
+    "POST_ENGINE_PAGE08_REGRESSION",
+    "POST_ENGINE_PAGE91_REGRESSION"
+  ]
+}

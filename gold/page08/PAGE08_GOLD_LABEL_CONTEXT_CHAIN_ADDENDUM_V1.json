@@ -1,0 +1,180 @@
+{
+  "schema": "examtrust.sourceguard.page08.gold_label_context_chain_addendum.v1",
+  "created_at_utc": "2026-09-13T07:20:31Z",
+  "state": "GOLD_LABEL_CONTEXT_CHAIN_EXTENSION_FROZEN",
+  "base_gold": {
+    "manifest_path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/manifests/PILOT01-PAGE08-FINAL-CLEANUP01-20260904T230453.415563Z.json",
+    "manifest_sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34",
+    "closure_path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/governance/PILOT01-PAGE08-HUMAN-VERIFIED-CLOSURE-20260904T230904.431553Z.json",
+    "closure_sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e"
+  },
+  "context": {
+    "context_mode": "CHAPTER",
+    "context_code": "C1",
+    "chapter_number": 1,
+    "chapter_title": "VẬT LÍ NHIỆT",
+    "lesson_number": null,
+    "page_ref": "P08",
+    "inherit_to_next_page_if_no_new_lesson_or_chapter": true
+  },
+  "records": [
+    {
+      "label_id": "PHY12_P08_G01",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "G01",
+      "type_code": "ND",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|G01|ND",
+      "components": [
+        [
+          52,
+          62,
+          315,
+          200
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_G01_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_G02",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "G02",
+      "type_code": "ND",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|G02|ND",
+      "components": [
+        [
+          65,
+          205,
+          341,
+          508
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_G02_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_G03",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "G03",
+      "type_code": "CH",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|G03|CH",
+      "components": [
+        [
+          65,
+          539,
+          276,
+          550
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_G03_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_G04",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "G04",
+      "type_code": "BT",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|G04|BT",
+      "components": [
+        [
+          65,
+          591,
+          301,
+          659
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_G04_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_N01",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "N01",
+      "type_code": "ND",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|N01|ND",
+      "components": [
+        [
+          354,
+          224,
+          456,
+          531
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_N01_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_V01",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "V01",
+      "type_code": "H",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|V01|H",
+      "components": [
+        [
+          322,
+          76,
+          483,
+          185
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_V01_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P08_V02",
+      "context_code": "C1",
+      "page_ref": "P08",
+      "box_id": "V02",
+      "type_code": "H",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "C1|P08|V02|H",
+      "components": [
+        [
+          349,
+          536,
+          454,
+          659
+        ]
+      ],
+      "content_chain_id": "PHY12_C1_V02_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    }
+  ],
+  "ruleset_path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+  "ruleset_sha256": "ae6a821e413e6b7fdb0bb6fbb4515fccaa4a6c9607149f0ad3dc69492bb8f562",
+  "original_gold_geometry_modified": false,
+  "frozen_at_utc": "2026-09-13T07:20:32Z"
+}

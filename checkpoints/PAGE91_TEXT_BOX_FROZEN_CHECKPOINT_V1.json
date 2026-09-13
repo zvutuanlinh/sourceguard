@@ -1,0 +1,35 @@
+{
+  "schema": "examtrust.sourceguard.page91.text_box_checkpoint.v1",
+  "created_at_utc": "2026-09-13T05:43:15Z",
+  "state": "FROZEN_GOOD_STATE_TEXT_BOX",
+  "human_decision": "CHOT",
+  "ruleset": {
+    "path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_TEXT_BOX_RULESET_V2_FROZEN.json",
+    "sha256": "60d57bebd71cc8749f12983a0cc06dbec51f9924fbded65e86e0f7d7bfb1412c"
+  },
+  "closure": {
+    "path": "/content/drive/MyDrive/test_examtrust/CLOSURE/PAGE91/PAGE91_TEXT_BOX_HUMAN_VERIFIED_CLOSURE.json",
+    "sha256": "f0f56c35b74b5d56033b81c8192fbc4ce3a099dae2d7e33cddb8d34d02b8648a"
+  },
+  "page91_text": {
+    "path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/GOLD_READINGLANE_RESCAN_REVIEW/PAGE91_GOLD_READINGLANE_RESCAN_REVIEW.json",
+    "sha256": "70cc369ac863200b45ec9dc87973daecf2da6e020f98d43f7f59e6683b75db94"
+  },
+  "round4": {
+    "path": "/content/drive/MyDrive/test_examtrust/VALIDATION/PAGE91_TEXT_BOX/ROUND04_CROSS_PAGE_GENERALIZATION/TEXT_ROUND04_CROSS_PAGE_GENERALIZATION_GATE.json",
+    "sha256": "e7723b795f766c819d4961a5b4bff8060a0ffb7c325c67cdcaabac65fe596e1b"
+  },
+  "page08_gold_manifest_sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34",
+  "page08_gold_closure_sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e",
+  "page91_visual_closure_sha256": "225a0c620e12a468e5fcf45d03dc15fdc1ab227fed9c3f4e4a7217d5e4e83f74",
+  "engine_sha256": "722984053f62369b83e7306f51f9abf80b60e254e6354eed8f1b046fa9f1d1ac",
+  "engine_modified": false,
+  "page08_gold_modified": false,
+  "page91_visual_modified": false,
+  "full_text_pass": false,
+  "pending": [
+    "PAGE91_LABEL_CREATION_RULE",
+    "ENGINE_PROMOTION",
+    "POST_ENGINE_REGRESSION"
+  ]
+}

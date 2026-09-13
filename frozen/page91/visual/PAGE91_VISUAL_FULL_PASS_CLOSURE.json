@@ -1,0 +1,66 @@
+{
+  "schema": "examtrust.sourceguard.page91_visual_closure.v1",
+  "page": "PAGE91",
+  "stage": "Visual",
+  "state": "HUMAN_VERIFIED_FULL_PASS",
+  "closed_utc": "2026-09-12T20:52:15.767015Z",
+  "architecture": [
+    "Container",
+    "Object",
+    "ReadingRegion",
+    "Anchor",
+    "ReadingLane",
+    "RegionGrowing",
+    "Validation",
+    "Render"
+  ],
+  "visual_evidence": {
+    "raw_proposals": 5,
+    "validation_true": 3,
+    "validation_false": 2,
+    "final_visuals": 3,
+    "V01": {
+      "iou_vs_v7": 1.0,
+      "caption_lines": 0
+    },
+    "V02": {
+      "iou_vs_v7": 1.0,
+      "caption_lines": 1
+    },
+    "V03": {
+      "iou_vs_v7": 1.0,
+      "caption_lines": 2
+    }
+  },
+  "canonical_baseline": {
+    "name": "PAGE91_VISUAL_V7",
+    "path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/VISUAL_V5_PATCH_V7/PAGE91_VISUAL_V5_PATCH_V7.json",
+    "sha256": "36ffa1bec0bcac53cbba54e99215f78ac2bedc10751641714f05f2761c3ddd96"
+  },
+  "actual_visual_audit": {
+    "path": "/content/drive/MyDrive/test_examtrust/FINAL_ACTUAL_RERUN/VISUAL_RULESET_V2/PAGE91_VISUAL_AUDIT/PAGE91_VISUAL_AUDIT_RESULT.json",
+    "sha256": "39901bbf8f62c770caf35c7052ed6bc2203ce2971280e454e83158c49a859e5f",
+    "human_review": "PASS"
+  },
+  "engine": {
+    "path": "/content/drive/MyDrive/test_examtrust/ENGINE/sourceguard_engine.py",
+    "sha256": "82e371bc2a10a9988ccf6f05a4426b4aecd0e9910eac01d0c20455cbf5db0837"
+  },
+  "page08_gold": {
+    "manifest_sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34",
+    "closure_sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e",
+    "unchanged": true
+  },
+  "downstream_regression": {
+    "readingregion_result": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/READINGREGION_PATCH_V1/PAGE91_READINGREGION_PATCH_RESULT.json",
+    "readingregion_result_sha256": "772aa3ceeb9de5eedff5d24f3fca5ce894ca86de52ac02b21066fb9369b417eb",
+    "visual_preserved": true,
+    "v7_exact": true
+  },
+  "governance": {
+    "visual_phase_closed": true,
+    "visual_must_not_be_modified": true,
+    "page08_gold_must_remain_immutable": true,
+    "next_active_stage": "ReadingRegion"
+  }
+}

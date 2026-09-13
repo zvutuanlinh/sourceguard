@@ -1,0 +1,87 @@
+{
+  "schema": "sourceguard.source_inventory.v1",
+  "storage_policy": {
+    "git": "rules/manifests/checkpoints/index/code",
+    "drive": "heavy source images/pdf/video/evidence",
+    "source_truth": "Drive original + SHA256 + frozen geometry metadata"
+  },
+  "drive_sources": [
+    {
+      "source_id": "PHY12_PAGE08_SOURCE",
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page08_Source.png",
+      "sha256": "59c336d932a0fbe36ad2498f3658724d7d92e176710ac54bdcb2933c93932ac4",
+      "git_store_binary": false
+    },
+    {
+      "source_id": "PHY12_PAGE91_SOURCE",
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page91_Source.png",
+      "sha256": "2c2dc1172cd71038ad34d6e256371b47d65c7323b5589024611bd5b9c2e5e9df",
+      "git_store_binary": false
+    }
+  ],
+  "artifact_copies": [
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_TEXT_BOX_RULESET_V2_FROZEN.json",
+      "repo_path": "rules/SOURCEGUARD_TEXT_BOX_RULESET_V2_FROZEN.json",
+      "source_sha256": "60d57bebd71cc8749f12983a0cc06dbec51f9924fbded65e86e0f7d7bfb1412c",
+      "repo_sha256": "60d57bebd71cc8749f12983a0cc06dbec51f9924fbded65e86e0f7d7bfb1412c",
+      "size_bytes": 4953
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+      "repo_path": "rules/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+      "source_sha256": "03337cecd9beec360b23560dcd4672e4bcaffbd3df047a3db67c01a9479e0be3",
+      "repo_sha256": "03337cecd9beec360b23560dcd4672e4bcaffbd3df047a3db67c01a9479e0be3",
+      "size_bytes": 2967
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/GOLD/PAGE08_GOLD_INDEX.json",
+      "repo_path": "gold/page08/PAGE08_GOLD_INDEX.json",
+      "source_sha256": "04f2d4ed8947d85dfbc4381d6d4abe5e7ee44e4d61707c3e17ed21d022a7689a",
+      "repo_sha256": "04f2d4ed8947d85dfbc4381d6d4abe5e7ee44e4d61707c3e17ed21d022a7689a",
+      "size_bytes": 2323
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/GOLD/PAGE08_GOLD_LABEL_CONTEXT_CHAIN_ADDENDUM_V1.json",
+      "repo_path": "gold/page08/PAGE08_GOLD_LABEL_CONTEXT_CHAIN_ADDENDUM_V1.json",
+      "source_sha256": "3b5f92582990492b559759318b91582e79ca4bc433f8fa31a4c6a2c61b08f192",
+      "repo_sha256": "3b5f92582990492b559759318b91582e79ca4bc433f8fa31a4c6a2c61b08f192",
+      "size_bytes": 4788
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/CHECKPOINTS/PAGE91_TEXT/PAGE91_TEXT_BOX_FROZEN_CHECKPOINT_V1.json",
+      "repo_path": "checkpoints/PAGE91_TEXT_BOX_FROZEN_CHECKPOINT_V1.json",
+      "source_sha256": "6f6adc2d81d615c0481f540828cff974dc4480f210f8f51094066feaf464fa29",
+      "repo_sha256": "6f6adc2d81d615c0481f540828cff974dc4480f210f8f51094066feaf464fa29",
+      "size_bytes": 1737
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/CLOSURE/PAGE91/PAGE91_VISUAL_FULL_PASS_CLOSURE.json",
+      "repo_path": "frozen/page91/visual/PAGE91_VISUAL_FULL_PASS_CLOSURE.json",
+      "source_sha256": "225a0c620e12a468e5fcf45d03dc15fdc1ab227fed9c3f4e4a7217d5e4e83f74",
+      "repo_sha256": "225a0c620e12a468e5fcf45d03dc15fdc1ab227fed9c3f4e4a7217d5e4e83f74",
+      "size_bytes": 2176
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/LABEL_CONTEXT_CHAIN_FINAL_V1/PAGE91_LABEL_CONTEXT_CHAIN_V1.json",
+      "repo_path": "frozen/page91/label/PAGE91_LABEL_CONTEXT_CHAIN_V1.json",
+      "source_sha256": "18e84b316ad3003eefb5ae52d495fbcd8affe499db24d1d32520675aa49bc596",
+      "repo_sha256": "18e84b316ad3003eefb5ae52d495fbcd8affe499db24d1d32520675aa49bc596",
+      "size_bytes": 4107
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/CLOSURE/PAGE91/PAGE91_LABEL_CONTEXT_CHAIN_HUMAN_VERIFIED_CLOSURE_V1.json",
+      "repo_path": "frozen/page91/label/PAGE91_LABEL_CONTEXT_CHAIN_HUMAN_VERIFIED_CLOSURE_V1.json",
+      "source_sha256": "d5844ec36794239a9a5d4e3decd2a836103430ce5f135af73d3007655e275e47",
+      "repo_sha256": "d5844ec36794239a9a5d4e3decd2a836103430ce5f135af73d3007655e275e47",
+      "size_bytes": 2134
+    },
+    {
+      "source_path": "/content/drive/MyDrive/test_examtrust/CHECKPOINTS/PAGE91_LABEL/PAGE91_LABEL_CONTEXT_CHAIN_CHECKPOINT_V1.json",
+      "repo_path": "checkpoints/PAGE91_LABEL_CONTEXT_CHAIN_CHECKPOINT_V1.json",
+      "source_sha256": "4b84bda25b5d3c92a5c01007b77ff3059c5de523413dddadba16ab5fe5903c31",
+      "repo_sha256": "4b84bda25b5d3c92a5c01007b77ff3059c5de523413dddadba16ab5fe5903c31",
+      "size_bytes": 1309
+    }
+  ]
+}

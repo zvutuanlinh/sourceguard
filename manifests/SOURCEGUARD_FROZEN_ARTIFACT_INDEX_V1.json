@@ -1,0 +1,20 @@
+{
+  "schema": "sourceguard.frozen_artifact_index.v1",
+  "text_box": {
+    "ruleset": "rules/SOURCEGUARD_TEXT_BOX_RULESET_V2_FROZEN.json",
+    "checkpoint": "checkpoints/PAGE91_TEXT_BOX_FROZEN_CHECKPOINT_V1.json"
+  },
+  "label_context_chain": {
+    "ruleset": "rules/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+    "page08_gold_addendum": "gold/page08/PAGE08_GOLD_LABEL_CONTEXT_CHAIN_ADDENDUM_V1.json",
+    "page91_artifact": "frozen/page91/label/PAGE91_LABEL_CONTEXT_CHAIN_V1.json",
+    "page91_closure": "frozen/page91/label/PAGE91_LABEL_CONTEXT_CHAIN_HUMAN_VERIFIED_CLOSURE_V1.json",
+    "checkpoint": "checkpoints/PAGE91_LABEL_CONTEXT_CHAIN_CHECKPOINT_V1.json"
+  },
+  "visual": {
+    "page91_closure": "frozen/page91/visual/PAGE91_VISUAL_FULL_PASS_CLOSURE.json"
+  },
+  "gold": {
+    "page08_index": "gold/page08/PAGE08_GOLD_INDEX.json"
+  }
+}

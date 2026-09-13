@@ -1,0 +1,45 @@
+{
+  "schema": "examtrust.sourceguard.label_context_chain.closure.v1",
+  "created_at_utc": "2026-09-13T07:20:32Z",
+  "state": "HUMAN_VERIFIED_FULL_PASS",
+  "human_decision": "CHOT",
+  "closed_scope": [
+    "compact borderless source label",
+    "chapter fallback context",
+    "lesson priority context",
+    "cross-page context inheritance",
+    "title-only source skip",
+    "content_chain_id",
+    "same-chain multi-page retrieval",
+    "Page08 Gold Label Addendum",
+    "Page91 Label artifact"
+  ],
+  "ruleset": {
+    "path": "/content/drive/MyDrive/test_examtrust/RULES/SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1_FROZEN.json",
+    "sha256": "03337cecd9beec360b23560dcd4672e4bcaffbd3df047a3db67c01a9479e0be3"
+  },
+  "page08_gold_addendum": {
+    "path": "/content/drive/MyDrive/test_examtrust/GOLD/PAGE08_GOLD_LABEL_CONTEXT_CHAIN_ADDENDUM_V1.json",
+    "sha256": "3b5f92582990492b559759318b91582e79ca4bc433f8fa31a4c6a2c61b08f192"
+  },
+  "page91": {
+    "path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/LABEL_CONTEXT_CHAIN_FINAL_V1/PAGE91_LABEL_CONTEXT_CHAIN_V1.json",
+    "sha256": "18e84b316ad3003eefb5ae52d495fbcd8affe499db24d1d32520675aa49bc596"
+  },
+  "page08_original_gold_manifest": {
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/manifests/PILOT01-PAGE08-FINAL-CLEANUP01-20260904T230453.415563Z.json",
+    "sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34",
+    "modified": false
+  },
+  "page08_original_gold_closure": {
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/governance/PILOT01-PAGE08-HUMAN-VERIFIED-CLOSURE-20260904T230904.431553Z.json",
+    "sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e",
+    "modified": false
+  },
+  "page91_frozen_text": {
+    "path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/GOLD_READINGLANE_RESCAN_REVIEW/PAGE91_GOLD_READINGLANE_RESCAN_REVIEW.json",
+    "sha256": "70cc369ac863200b45ec9dc87973daecf2da6e020f98d43f7f59e6683b75db94",
+    "modified": false
+  },
+  "engine_modified": false
+}

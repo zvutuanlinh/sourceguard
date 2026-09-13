@@ -1,0 +1,50 @@
+{
+  "schema": "examtrust.sourceguard.page_gold_index.v1",
+  "page_id": "PAGE08",
+  "decision": "HUMAN_VERIFIED_PASS",
+  "gold_state": "FROZEN_REFERENCE",
+  "frozen": true,
+  "raw_source_sha256": "59c336d932a0fbe36ad2498f3658724d7d92e176710ac54bdcb2933c93932ac4",
+  "canonical_evidence_root": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE",
+  "final_manifest": {
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/manifests/PILOT01-PAGE08-FINAL-CLEANUP01-20260904T230453.415563Z.json",
+    "sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34"
+  },
+  "closure": {
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/SOURCEGUARD/SG-GOV-01/pilots/PILOT-01/governance/PILOT01-PAGE08-HUMAN-VERIFIED-CLOSURE-20260904T230904.431553Z.json",
+    "sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e"
+  },
+  "backup_consistency": {
+    "role": "NON_CANONICAL_INTEGRITY_CHECK_ONLY",
+    "closure_backups": [
+      {
+        "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE_BACKUP_2026_09_12/SG-GOV-01/pilots/PILOT-01/governance/PILOT01-PAGE08-HUMAN-VERIFIED-CLOSURE-20260904T230904.431553Z.json",
+        "sha256": "e92209ccff1aa48a2d9ab83321de9d5862aecf4b5d5d4e9f2c92485b2e7c496e",
+        "matches_canonical": true
+      }
+    ],
+    "final_manifest_backups": [
+      {
+        "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE_BACKUP_2026_09_12/SG-GOV-01/pilots/PILOT-01/manifests/PILOT01-PAGE08-FINAL-CLEANUP01-20260904T230453.415563Z.json",
+        "sha256": "1acdb8f6d8e24c84768a2c7fd54406a81a3325b8e5c2d9429b5ab7b406c6ac34",
+        "matches_canonical": true
+      }
+    ]
+  },
+  "active_state_consistency": {
+    "role": "SECONDARY_RUNTIME_CONSISTENCY_ONLY",
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/EVIDENCE/AUTOTRACE/current_state/PILOT01_CURRENT_ACTIVE_STATE.json",
+    "consistent": true
+  },
+  "phase0_policy": {
+    "historical_cells_mutated": false,
+    "detector_rerun": false,
+    "ocr_rerun": false,
+    "segmentation_rerun": false,
+    "historical_artifacts_modified": false,
+    "backup_used_as_canonical": false
+  },
+  "created_at": "2026-09-13T01:11:32+07:00",
+  "output_root": "/content/drive/MyDrive/test_examtrust/GOLD",
+  "next_phase": "PAGE08_RETROSPECTIVE_V1"
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "examtrust.sourceguard.page91.label_context_chain.v1",
+  "created_at_utc": "2026-09-13T07:20:31Z",
+  "state": "FROZEN_HUMAN_VERIFIED",
+  "context": {
+    "context_mode": "LESSON",
+    "context_code": "B21",
+    "lesson_number": 21,
+    "page_ref": "P91",
+    "inherit_to_next_page_if_no_new_lesson": true
+  },
+  "skipped_source_units": [
+    {
+      "box_id": "R01",
+      "reason": "STANDALONE_LESSON_TITLE_ONLY"
+    }
+  ],
+  "records": [
+    {
+      "label_id": "PHY12_P91_R02",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "R02",
+      "type_code": "CH",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|R02|CH",
+      "components": [
+        [
+          65,
+          113,
+          437,
+          163
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_R02_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P91_R03",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "R03",
+      "type_code": "TN",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|R03|TN",
+      "components": [
+        [
+          49,
+          190,
+          318,
+          372
+        ],
+        [
+          62,
+          369,
+          452,
+          411
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_R03_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P91_R07",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "R07",
+      "type_code": "ND",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|R07|ND",
+      "components": [
+        [
+          65,
+          595,
+          450,
+          631
+        ],
+        [
+          62,
+          632,
+          109,
+          643
+        ],
+        [
+          436,
+          654,
+          471,
+          670
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_R07_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P91_V01",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "V01",
+      "type_code": "H",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|V01|H",
+      "components": [
+        [
+          66,
+          429,
+          241,
+          566
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_V01_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P91_V02",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "V02",
+      "type_code": "H",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|V02|H",
+      "components": [
+        [
+          278,
+          424,
+          428,
+          567
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_V02_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    },
+    {
+      "label_id": "PHY12_P91_V03",
+      "context_code": "B21",
+      "page_ref": "P91",
+      "box_id": "V03",
+      "type_code": "H",
+      "line_start": null,
+      "line_end": null,
+      "display_label": "B21|P91|V03|H",
+      "components": [
+        [
+          331,
+          216,
+          447,
+          359
+        ]
+      ],
+      "content_chain_id": "PHY12_B21_V03_CHAIN",
+      "continuation_prev": null,
+      "continuation_next": null,
+      "geometry_modified": false
+    }
+  ],
+  "frozen_text_path": "/content/drive/MyDrive/test_examtrust/GENERALIZATION/PAGE91/GOLD_READINGLANE_RESCAN_REVIEW/PAGE91_GOLD_READINGLANE_RESCAN_REVIEW.json",
+  "frozen_text_sha256": "70cc369ac863200b45ec9dc87973daecf2da6e020f98d43f7f59e6683b75db94",
+  "frozen_visual_closure_sha256": "225a0c620e12a468e5fcf45d03dc15fdc1ab227fed9c3f4e4a7217d5e4e83f74",
+  "geometry_modified": false,
+  "frozen_at_utc": "2026-09-13T07:20:32Z"
+}

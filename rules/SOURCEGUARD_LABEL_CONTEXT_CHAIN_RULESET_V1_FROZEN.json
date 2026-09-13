@@ -1,0 +1,100 @@
+{
+  "schema": "examtrust.sourceguard.label_context_chain.ruleset.v1",
+  "created_at_utc": "2026-09-13T07:20:31Z",
+  "state": "FROZEN_HUMAN_VERIFIED",
+  "architecture": [
+    "Container",
+    "Object",
+    "ReadingRegion",
+    "Anchor",
+    "ReadingLane",
+    "RegionGrowing",
+    "Validation",
+    "Render"
+  ],
+  "source_unit_rule": {
+    "source_truth": "EXISTING_FROZEN_BOX",
+    "label_creates_source": false,
+    "label_changes_geometry": false,
+    "ocr_reconstruction": false,
+    "rerender_as_source_truth": false
+  },
+  "skip_rule": {
+    "standalone_lesson_title_only": true,
+    "standalone_chapter_title_only": true,
+    "standalone_section_heading_only_without_content": true,
+    "reason": "NOT_DIRECTLY_USEFUL_FOR_QUESTION_GENERATION"
+  },
+  "context_rule": {
+    "priority": [
+      "NEW_LESSON",
+      "INHERITED_LESSON",
+      "NEW_CHAPTER",
+      "INHERITED_CHAPTER"
+    ],
+    "new_lesson": "USE_B<number>",
+    "no_lesson_but_chapter": "USE_C<number>",
+    "no_new_lesson_or_chapter": "INHERIT_PREVIOUS_CONTEXT",
+    "chapter_then_lesson_appears": "SWITCH_TO_LESSON",
+    "after_lesson_exists": "INHERIT_LESSON_UNTIL_NEW_LESSON"
+  },
+  "multi_page_rule": {
+    "new_structural_signals": [
+      "MARKER",
+      "LESSON_NAME",
+      "CHAPTER_NAME",
+      "SECTION",
+      "SUBSECTION",
+      "STRUCTURAL_ICON"
+    ],
+    "if_no_new_structural_signal": "CONTINUE_PREVIOUS_CONTENT",
+    "first_box_next_page": "NORMAL_SOURCE_BOX",
+    "physical_geometry": "PAGE_LOCAL_ONLY",
+    "cross_page_geometry_merge": false,
+    "same_logical_content": "SAME_CONTENT_CHAIN_ID",
+    "different_page": "DIFFERENT_PAGE_REF",
+    "different_box": "DIFFERENT_BOX_ID",
+    "retrieval": "RETURN_ALL_SOURCE_BOXES_WITH_SAME_CONTENT_CHAIN_ID"
+  },
+  "content_chain_rule": {
+    "stored_in": "BOX_METADATA",
+    "displayed_on_image": false,
+    "purpose": "GROUP_CONTINUING_SOURCE_BOXES_ACROSS_PAGES",
+    "source_boxes_remain_independent": true
+  },
+  "label_display": {
+    "format": "CONTEXT|PAGE|TRUSTED_LINES_IF_AVAILABLE|BOX_ID|TYPE",
+    "chapter_example": "C1|P08|G01|ND",
+    "lesson_example": "B21|P91|R03|TN",
+    "with_lines_example": "B21|P91|L12-28|R03|TN",
+    "invent_lines": false,
+    "border": false,
+    "background_rectangle": false,
+    "adjacent_to_source": true,
+    "font": "cv2.FONT_HERSHEY_DUPLEX",
+    "font_scale": 0.33,
+    "font_thickness": 1,
+    "white_halo": 2
+  },
+  "type_codes": {
+    "ND": "CONTENT",
+    "CH": "QUESTION",
+    "BT": "EXERCISE",
+    "DN": "DEFINITION",
+    "DL": "THEOREM_OR_LAW",
+    "TN": "EXPERIMENT",
+    "CT": "FORMULA",
+    "H": "IMAGE_OR_DIAGRAM",
+    "B": "TABLE",
+    "VD": "EXAMPLE",
+    "GC": "NOTE"
+  },
+  "governance": {
+    "page08_original_gold_mutation_allowed": false,
+    "page91_text_mutation_allowed": false,
+    "page91_visual_mutation_allowed": false,
+    "page_specific_engine_rule": false,
+    "freeze_only_after_post_write_exact_match": true
+  },
+  "frozen_at_utc": "2026-09-13T07:20:32Z"
+}
