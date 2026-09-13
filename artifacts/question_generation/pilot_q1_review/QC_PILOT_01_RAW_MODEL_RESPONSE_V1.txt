@@ -1,0 +1,22 @@
+{
+  "generation_status": "GENERATED",
+  "question": "Theo mô hình động học phân tử được mô tả trong văn bản, khi các phân tử nhận được càng nhiều năng lượng thì đặc điểm chuyển động, khoảng cách trung bình và lực liên kết giữa chúng thay đổi như thế nào?",
+  "options": {
+    "A": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng yếu.",
+    "B": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng mạnh.",
+    "C": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng mạnh.",
+    "D": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng yếu."
+  },
+  "correct_answer": "A",
+  "short_explanation": "Theo văn bản trong nguồn, khi các phân tử càng nhận được nhiều năng lượng thì các phân tử chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng yếu.",
+  "minimum_solution_path": [
+    "Dựa vào đoạn văn bản mô tả mô hình động học phân tử, xác định mối quan hệ khi năng lượng tăng: phân tử chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng và lực liên kết giữa chúng càng yếu."
+  ],
+  "step_source_map": [
+    {
+      "step": 1,
+      "source_id": "PHY12_P08_G01"
+    }
+  ],
+  "external_knowledge_used": false
+}

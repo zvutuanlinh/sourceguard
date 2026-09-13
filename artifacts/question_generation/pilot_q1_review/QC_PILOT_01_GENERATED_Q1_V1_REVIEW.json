@@ -1,0 +1,109 @@
+{
+  "schema": "examtrust.question_generation.generated_item.v1",
+  "state": "REVIEW_ONLY",
+  "created_at_utc": "2026-09-13T09:18:28Z",
+  "contract": {
+    "contract_id": "QC_PILOT_01",
+    "contract_file": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/02_CONTRACTS/QUESTION_CONTRACTS_V1_REVIEW.json",
+    "contract_file_sha256": "606600cc6acd0cd38b98f6b22d62b48a53db3cd5c88d12199c17764a68496880",
+    "pilot_slot": "Q1",
+    "scope_type": "NON_EXPANDED",
+    "level": "UNDERSTAND",
+    "question_type": "SINGLE_CHOICE"
+  },
+  "generation": {
+    "provider": "Google Gemini API",
+    "model": "gemini-3.6-flash",
+    "prompt_sha256": "463a5365d4aac08ab9c4850b9617aeed623e7582934d7d5c293e20ab0882740c"
+  },
+  "source_evidence": {
+    "source_ids": [
+      "PHY12_P08_G01"
+    ],
+    "preview_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/06_VERIFICATION_PACK/source_previews/QC_PILOT_01_PHY12_P08_G01.png",
+    "preview_sha256": "7ed635ec81c2595af6199ffc3c4b418cb938ef3a2c116d3a1acb85f2ea46a170"
+  },
+  "generated_item": {
+    "generation_status": "GENERATED",
+    "question": "Theo mô hình động học phân tử được mô tả trong văn bản, khi các phân tử nhận được càng nhiều năng lượng thì đặc điểm chuyển động, khoảng cách trung bình và lực liên kết giữa chúng thay đổi như thế nào?",
+    "options": {
+      "A": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng yếu.",
+      "B": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng mạnh.",
+      "C": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng mạnh.",
+      "D": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng yếu."
+    },
+    "correct_answer": "A",
+    "short_explanation": "Theo văn bản trong nguồn, khi các phân tử càng nhận được nhiều năng lượng thì các phân tử chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng yếu.",
+    "minimum_solution_path": [
+      "Dựa vào đoạn văn bản mô tả mô hình động học phân tử, xác định mối quan hệ khi năng lượng tăng: phân tử chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng và lực liên kết giữa chúng càng yếu."
+    ],
+    "step_source_map": [
+      {
+        "step": 1,
+        "source_id": "PHY12_P08_G01"
+      }
+    ],
+    "external_knowledge_used": false
+  },
+  "structural_validation": [
+    {
+      "check": "Question text exists",
+      "state": "PASS"
+    },
+    {
+      "check": "Exactly options A/B/C/D",
+      "state": "PASS"
+    },
+    {
+      "check": "Option A non-empty",
+      "state": "PASS"
+    },
+    {
+      "check": "Option B non-empty",
+      "state": "PASS"
+    },
+    {
+      "check": "Option C non-empty",
+      "state": "PASS"
+    },
+    {
+      "check": "Option D non-empty",
+      "state": "PASS"
+    },
+    {
+      "check": "Correct answer is one of A-D",
+      "state": "PASS"
+    },
+    {
+      "check": "Minimum solution path satisfies MRS >= 1",
+      "state": "PASS"
+    },
+    {
+      "check": "Step–Source Map exists",
+      "state": "PASS"
+    },
+    {
+      "check": "Every reasoning step maps to approved source",
+      "state": "PASS"
+    },
+    {
+      "check": "Four options are distinct",
+      "state": "PASS"
+    }
+  ],
+  "evidence_policy": {
+    "external_knowledge_used": false,
+    "outside_source_inference_allowed": false,
+    "teacher_verification_required": true
+  },
+  "teacher_status": "UNVERIFIED",
+  "ready_for_use": false,
+  "governance": {
+    "sourceguard_mutated": false,
+    "source_geometry_changed": false,
+    "source_content_changed": false,
+    "checkpoint_created": false,
+    "freeze": false,
+    "git": false
+  }
+}

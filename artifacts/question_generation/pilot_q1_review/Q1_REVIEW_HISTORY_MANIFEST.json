@@ -1,0 +1,38 @@
+{
+  "schema": "examtrust.q1_review_history.v1",
+  "state": "REVIEW_HISTORY",
+  "created_at_utc": "2026-09-13T09:32:38Z",
+  "pilot_slot": "Q1",
+  "contract_id": "QC_PILOT_01",
+  "source_id": "PHY12_P08_G01",
+  "teacher_status": "EDITED_APPROVED",
+  "ready_for_use": true,
+  "artifacts": [
+    {
+      "file": "QUESTION_CONTRACTS_V1_REVIEW.json",
+      "sha256": "606600cc6acd0cd38b98f6b22d62b48a53db3cd5c88d12199c17764a68496880",
+      "bytes": 17630
+    },
+    {
+      "file": "QC_PILOT_01_GENERATED_Q1_V1_REVIEW.json",
+      "sha256": "8ff649ed364824b84a48580abde032f02ad295935e4139b2834954e0d40ea7b1",
+      "bytes": 4161
+    },
+    {
+      "file": "QC_PILOT_01_RAW_MODEL_RESPONSE_V1.txt",
+      "sha256": "579a4eef64041135fe75a7ec397853386b2733b70039499c5589589cf35dae28",
+      "bytes": 1732
+    },
+    {
+      "file": "QC_PILOT_01_TEACHER_REVIEW_V1.json",
+      "sha256": "b3d1d6d25849e037961c3091853532cb852b31d9b2c2373e51f48682e7b377bd",
+      "bytes": 2317
+    }
+  ],
+  "governance": {
+    "sourceguard_mutated": false,
+    "checkpoint_created": false,
+    "freeze": false,
+    "git_history_only": true
+  }
+}

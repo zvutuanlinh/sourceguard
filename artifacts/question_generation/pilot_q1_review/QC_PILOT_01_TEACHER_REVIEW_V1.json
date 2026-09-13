@@ -1,0 +1,47 @@
+{
+  "schema": "examtrust.teacher_review.v1",
+  "state": "REVIEW_ONLY",
+  "created_at_utc": "2026-09-13T09:29:55Z",
+  "contract_id": "QC_PILOT_01",
+  "pilot_slot": "Q1",
+  "source_evidence": {
+    "source_id": "PHY12_P08_G01",
+    "display_label": "C1|P08|G01|ND",
+    "source_preview_path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/06_VERIFICATION_PACK/source_previews/QC_PILOT_01_PHY12_P08_G01.png",
+    "source_preview_sha256": "7ed635ec81c2595af6199ffc3c4b418cb938ef3a2c116d3a1acb85f2ea46a170"
+  },
+  "generated_artifact": {
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/04_RAW_GENERATION/items/QC_PILOT_01_GENERATED_Q1_V1_REVIEW.json",
+    "sha256": "8ff649ed364824b84a48580abde032f02ad295935e4139b2834954e0d40ea7b1"
+  },
+  "teacher_review": {
+    "decision": "EDITED_APPROVED",
+    "note": "",
+    "final_question": "Khi các phân tử nhận được càng nhiều năng lượng, chuyển động, khoảng cách trung bình và lực liên kết giữa chúng thay đổi như thế nào?",
+    "final_options": {
+      "A": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng yếu.",
+      "B": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng tăng, lực liên kết giữa chúng càng mạnh.",
+      "C": "Chuyển động hỗn loạn càng nhanh, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng mạnh.",
+      "D": "Chuyển động hỗn loạn càng chậm, khoảng cách trung bình giữa chúng càng giảm, lực liên kết giữa chúng càng yếu."
+    },
+    "final_correct_answer": "A",
+    "final_explanation": "Khi các phân tử nhận được nhiều năng lượng hơn, chúng chuyển động hỗn loạn nhanh hơn, khoảng cách trung bình tăng và lực liên kết yếu đi."
+  },
+  "traceability": {
+    "step_source_map": [
+      {
+        "step": 1,
+        "source_id": "PHY12_P08_G01"
+      }
+    ],
+    "external_knowledge_used": false
+  },
+  "ready_for_use": true,
+  "governance": {
+    "sourceguard_mutated": false,
+    "source_geometry_changed": false,
+    "checkpoint_created": false,
+    "freeze": false,
+    "git": false
+  }
+}
