@@ -1,0 +1,230 @@
+{
+  "schema": "examtrust.qg.source_grounding_composition_rule.v1",
+  "rule_id": "QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1",
+  "version": "1.0.0",
+  "state": "ACTIVE_RULE",
+  "created_at_utc": "2026-09-14T02:39:46.110183+00:00",
+  "scope": {
+    "applies_to": [
+      "NON_EXPANDED",
+      "SOURCE_BOUNDED_EXPANDED"
+    ],
+    "applies_before_every_controlled_generation": true,
+    "applies_to_single_source": true,
+    "applies_to_multi_source": true,
+    "page_specific_rule": false,
+    "candidate_specific_rule": false,
+    "source_id_specific_rule": false
+  },
+  "core_invariant": {
+    "name": "SOURCE_GROUNDED_QUESTION_INVARIANT",
+    "statement": "Every factual claim, numeric value, unit, quantity meaning, semantic relation, premise, answer claim, explanation claim, and required reasoning step in a generated question must be traceable to approved original source evidence.",
+    "requirements": [
+      "Every factual claim must map to approved source evidence.",
+      "Every numeric value must map to approved source evidence.",
+      "Every unit must map to approved source evidence.",
+      "Every quantity meaning must map to approved source evidence.",
+      "Every relation used in reasoning must map to approved source evidence.",
+      "Every required reasoning step must map to approved Source Units.",
+      "No unstated premise may be invented.",
+      "No external fact may be introduced unless explicitly permitted by contract.",
+      "No external formula may be introduced unless explicitly permitted by contract.",
+      "No external law may be introduced unless explicitly permitted by contract.",
+      "No external constant may be introduced unless explicitly permitted by contract.",
+      "No source-supported number may be reassigned to another semantic quantity.",
+      "No unsupported initial value may be invented to manufacture a calculation.",
+      "Structural validity never overrides source-grounding failure."
+    ]
+  },
+  "mandatory_pre_generation_pipeline": [
+    "APPROVED_SOURCE_EVIDENCE",
+    "COHERENT_EVIDENCE_BUNDLE",
+    "FACT_LEDGER",
+    "NUMBER_UNIT_QUANTITY_LEDGER",
+    "RELATION_LEDGER",
+    "QUESTION_OPPORTUNITY_REVIEW",
+    "MULTI_SOURCE_COMPOSITION_REVIEW_IF_APPLICABLE",
+    "PRE_GENERATION_GROUNDING_GATE",
+    "CONTROLLED_GENERATION"
+  ],
+  "coherent_evidence_rule": {
+    "required": true,
+    "principle": "QG must reason over a semantically coherent evidence bundle, not arbitrary isolated fragments.",
+    "requirements": [
+      "Approved geometry components are evidence boundaries, not proof of semantic completeness.",
+      "Component authorization does not prove semantic coherence.",
+      "Same page does not prove semantic relation.",
+      "Same context_code does not prove semantic relation.",
+      "Same lesson or chapter does not prove semantic relation.",
+      "The evidence bundle must preserve the reading context required to interpret facts correctly.",
+      "If selected fragments omit necessary bridging content, generation must be blocked.",
+      "The model must not invent missing semantic bridges."
+    ]
+  },
+  "fact_ledger_rule": {
+    "required": true,
+    "each_fact_requires": [
+      "fact_id",
+      "claim",
+      "source_id",
+      "approved_component_reference",
+      "support_state"
+    ],
+    "allowed_support_states": [
+      "SOURCE_EXPLICIT",
+      "SOURCE_DIRECTLY_DERIVABLE"
+    ],
+    "forbidden_support_states": [
+      "MODEL_INVENTED",
+      "EXTERNAL_KNOWLEDGE",
+      "UNSUPPORTED",
+      "AMBIGUOUS"
+    ]
+  },
+  "number_unit_quantity_rule": {
+    "required": true,
+    "principle": "Numeric grounding requires value + quantity meaning + unit/context + source evidence. Matching a number alone is insufficient.",
+    "ledger_tuple": [
+      "value",
+      "quantity",
+      "unit_or_context",
+      "source_id",
+      "evidence_reference"
+    ],
+    "requirements": [
+      "A number may only be used with its source-supported semantic quantity.",
+      "A ratio may not become an absolute quantity without source-supported absolute data.",
+      "A count, frequency, thickness, ratio, angle, time, distance, probability or other quantity must retain its semantic type.",
+      "A computed value is allowed only when all operands and operations are source-authorized.",
+      "If any required operand is invented, the numeric reasoning chain fails."
+    ]
+  },
+  "relation_ledger_rule": {
+    "required": true,
+    "each_relation_requires": [
+      "relation_id",
+      "relation_type",
+      "from_fact_or_source",
+      "to_fact_or_source",
+      "source_support",
+      "support_state"
+    ],
+    "allowed_support_states": [
+      "EXPLICIT_IN_SOURCE",
+      "DIRECTLY_DERIVABLE_FROM_SOURCE"
+    ],
+    "forbidden_support_states": [
+      "MODEL_BRIDGED_ONLY",
+      "SAME_PAGE_ONLY",
+      "SAME_CONTEXT_ONLY",
+      "SAME_CHAPTER_ONLY",
+      "PEDAGOGICAL_GUESS"
+    ]
+  },
+  "multi_source_composition_rule": {
+    "required_when_source_count_gt_1": true,
+    "all_conditions_required": true,
+    "conditions": {
+      "M1": "Each selected Source Unit is sufficiently interpretable within the coherent evidence bundle.",
+      "M2": "The semantic relation between Source Units is explicit or directly derivable from original evidence.",
+      "M3": "The intended question genuinely requires the cross-source relation.",
+      "M4": "No missing semantic bridge is invented by the model.",
+      "M5": "No numeric value, unit, or quantity is reassigned across semantic meanings.",
+      "M6": "Sources are not stitched together solely to manufacture cognitive difficulty.",
+      "M7": "The complete minimum solution path can be reconstructed from approved evidence.",
+      "M8": "Removing a Source Unit declared as necessary makes the intended solution incomplete."
+    },
+    "same_page_is_sufficient": false,
+    "same_context_is_sufficient": false,
+    "same_chapter_is_sufficient": false
+  },
+  "question_opportunity_rule": {
+    "required": true,
+    "requirements": [
+      "The requested cognitive level must arise naturally from source-supported relations.",
+      "Do not invent data to satisfy APPLY.",
+      "Do not invent relations to satisfy ADVANCED.",
+      "Do not force multi-source composition when a coherent simpler source is more natural.",
+      "If the requested cognitive level is unsupported, return HOLD_NO_VALID_SOURCE_SET."
+    ]
+  },
+  "pre_generation_grounding_gate": {
+    "mandatory": true,
+    "pass_requires": [
+      "approved_evidence_verified",
+      "coherent_evidence_bundle_confirmed",
+      "fact_ledger_complete",
+      "number_unit_quantity_ledger_complete",
+      "relation_ledger_complete",
+      "question_opportunity_valid",
+      "multi_source_composition_valid_if_applicable",
+      "no_unsupported_fact",
+      "no_unsupported_number",
+      "no_unsupported_unit",
+      "no_unsupported_quantity",
+      "no_unsupported_relation",
+      "no_external_bridge",
+      "no_artificial_complexity"
+    ],
+    "failure_action": "GENERATION_BLOCKED",
+    "teacher_override_allowed": false,
+    "llm_override_allowed": false
+  },
+  "mandatory_post_generation_validation": [
+    "CLAIM_GROUNDING",
+    "NUMBER_GROUNDING",
+    "UNIT_GROUNDING",
+    "QUANTITY_GROUNDING",
+    "RELATION_GROUNDING",
+    "STEP_SOURCE_MAP_VALIDATION",
+    "SOURCE_EVIDENCE_VALIDATION",
+    "COGNITIVE_VALIDATION",
+    "TEACHER_REVIEW"
+  ],
+  "failure_codes": {
+    "UNSUPPORTED_FACT": "Candidate fact is unsupported by approved evidence.",
+    "UNSUPPORTED_NUMERIC_FACT": "Candidate numeric value has no approved source support.",
+    "UNSUPPORTED_UNIT": "Candidate unit has no approved source support.",
+    "UNSUPPORTED_QUANTITY": "Candidate semantic/physical quantity is unsupported.",
+    "QUANTITY_MEANING_MISMATCH": "A source-supported number is reused as another quantity.",
+    "UNSUPPORTED_RELATION": "Required semantic relation is unsupported.",
+    "MISSING_SEMANTIC_BRIDGE": "Composition requires a bridge absent from approved evidence.",
+    "ARTIFICIAL_MULTI_SOURCE_COMPOSITION": "Fragments were combined merely to manufacture difficulty.",
+    "INCOMPLETE_COHERENT_EVIDENCE": "Approved evidence lacks necessary continuous semantic context.",
+    "COGNITIVE_LEVEL_NOT_SOURCE_SUPPORTED": "Requested cognitive level is not naturally supported.",
+    "HOLD_NO_VALID_SOURCE_SET": "No valid grounded source set supports the requested item."
+  },
+  "state_policy": {
+    "structural_pass_does_not_imply_grounding_pass": true,
+    "grounding_fail_ready_for_use": false,
+    "grounding_fail_publication_allowed": false,
+    "teacher_approval_requires_prior_source_evidence_pass": true,
+    "teacher_cannot_authorize_unsupported_source_claim": true,
+    "generation_blocked_until_pregen_gate_pass": true
+  },
+  "anti_overfit_policy": {
+    "page_id_specific_logic_allowed": false,
+    "fixed_coordinate_generation_logic_allowed": false,
+    "candidate_id_specific_logic_allowed": false,
+    "pilot_question_specific_rule_allowed": false,
+    "gold_geometry_may_define_evidence_boundaries_but_not_semantic_truth": true
+  },
+  "sourceguard_integration": {
+    "architecture": "Container → Object → ReadingRegion → Anchor → ReadingLane → RegionGrowing → Validation → Render",
+    "visual_component_authorization_equals_semantic_completeness": false,
+    "source_truth": "Original page / frozen Source Unit / approved evidence crop",
+    "llm_rewrite_is_source_truth": false
+  },
+  "governance": {
+    "artifact_class": "SYSTEM_OPERATING_RULE",
+    "derived_from_pilot_learning": true,
+    "generic_rule": true,
+    "requires_human_review_for_semantic_coherence": true,
+    "automatic_model_self_authorization_allowed": false,
+    "frozen_source_modified": false,
+    "runtime_source_modified": false,
+    "question_contract_modified": false,
+    "checkpoint_created": false,
+    "freeze_created": false
+  }
+}
