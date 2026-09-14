@@ -1,0 +1,144 @@
+{
+  "schema": "examtrust.project_closure_manifest.v1",
+  "closure_id": "EXAMTRUST_PROJECT_CLOSURE_V1",
+  "created_at_utc": "2026-09-14T03:41:04.641049+00:00",
+  "state": "TECHNICAL_PROJECT_CLOSED_AND_PRESERVED",
+  "submission_state": "WORKING_PRE_SUBMISSION",
+  "sourceguard": {
+    "head_before_closure_commit": "ae34b07ee5e02a353a54747d92d0c28de0a84fe4",
+    "architecture": "Container → Object → ReadingRegion → Anchor → ReadingLane → RegionGrowing → Validation → Render",
+    "tags": {
+      "sourceguard-baseline-v1": "73da641e072d5d6a36eb7b986b98432d16e19b9d",
+      "sourceguard-runtime-index-v1": "df6cb59d50023bb4848a60e2dd3703ebfbf97ddd",
+      "sourceguard-retrieval-runtime-v1": "0a2a8ed722ad767a04c4656c582fb561f5e6e186",
+      "qg-grounding-governance-v1": "86b813d635b7a32a7d9b92221ed37e57082238f8",
+      "qg-pilot-q1-q6-v1": "ae34b07ee5e02a353a54747d92d0c28de0a84fe4"
+    },
+    "runtime_index_sha256": "dfdbbbf68301d3f3726fa59c4f5937dcf882e64430d7d1ff1d3200033d8fe58d",
+    "page08_source_sha256": "59c336d932a0fbe36ad2498f3658724d7d92e176710ac54bdcb2933c93932ac4",
+    "page91_source_sha256": "2c2dc1172cd71038ad34d6e256371b47d65c7323b5589024611bd5b9c2e5e9df",
+    "page08_gold_index_sha256": "04f2d4ed8947d85dfbc4381d6d4abe5e7ee44e4d61707c3e17ed21d022a7689a"
+  },
+  "pilot_q1_q6": {
+    "state": "PILOT_FINALIZED",
+    "Q1": "READY_PUBLISHED",
+    "Q2": "READY_PUBLISHED",
+    "Q3": "HOLD_NO_VALID_SOURCE_SET",
+    "Q4": "READY_PUBLISHED",
+    "Q5": "NEGATIVE_PILOT_EVIDENCE_RETAINED",
+    "Q6": "FINAL_HOLD_NO_VALID_SOURCE_SET",
+    "history_sha256": "92e9c3529bc2961a4823ee7dc3da35c3b49d81ad3bf28d63b0e82598f3d6f5a3",
+    "final_summary_json_sha256": "dd4f8eb28326884921ed6c5bcdb130325792f10afbeefdb5362449035d5f34b3",
+    "final_summary_md_sha256": "e20cfc2705512e7b05809c909e07b3538f2b0a92a0d301572e4eb55ebca346c7",
+    "pilot_results_sha256": "1fe3296558b8ad85ec6ccffd1b41ab34aa80b5d44036a562fdb922f651ef9546"
+  },
+  "qg_governance": {
+    "source_grounding_rule_sha256": "d8e28bb8d40dc161c194fbfac71b3583e0e2d0fcd10d6ee8c1e82d730302d4eb",
+    "auto_grounding_rule_sha256": "aa7f81b158662f0eb98326e2b2a7f65f523fe86ba24be68eab144e1173a65e79",
+    "ai_self_approval_allowed": false,
+    "human_review_required": true,
+    "grounding_guard_required": true,
+    "safe_hold_is_valid_output": true
+  },
+  "historical_repository": {
+    "path": "/content/drive/MyDrive/ExamTrust_AI_2026/WORKSPACE/examtrust-ai-2026",
+    "head": "bdd73bb23b668258330bad4c3cc8cb6c4a949b4b",
+    "policy": "READ_ONLY",
+    "modified": false
+  },
+  "disaster_recovery": {
+    "sourceguard_bundle": {
+      "path": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/GIT_BUNDLES/sourceguard_full_history_v1.bundle",
+      "sha256": "7cc6bca2cb707d1004d307e4c5036ae2abb39d9dbdd5343fabd4593934795f30",
+      "bundle_verify": "PASS"
+    },
+    "historical_bundle": {
+      "path": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/GIT_BUNDLES/examtrust_ai_2026_historical_full_history.bundle",
+      "sha256": "420ebe6f2e641eea25391cd2831a470f930f22a9d1180ffb4959f564d2feeada",
+      "bundle_verify": "PASS"
+    }
+  },
+  "snapshots": [
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/08_PILOT_RESULTS/PILOT_QUESTION_HISTORY.md",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/PILOT_QUESTION_HISTORY.md",
+      "sha256": "92e9c3529bc2961a4823ee7dc3da35c3b49d81ad3bf28d63b0e82598f3d6f5a3"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/08_PILOT_RESULTS/PILOT_Q1_Q6_FINAL_SUMMARY_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/PILOT_Q1_Q6_FINAL_SUMMARY_V1.json",
+      "sha256": "dd4f8eb28326884921ed6c5bcdb130325792f10afbeefdb5362449035d5f34b3"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/08_PILOT_RESULTS/PILOT_Q1_Q6_FINAL_SUMMARY_V1.md",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/PILOT_Q1_Q6_FINAL_SUMMARY_V1.md",
+      "sha256": "e20cfc2705512e7b05809c909e07b3538f2b0a92a0d301572e4eb55ebca346c7"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/PROJECT_DOCUMENTATION/GOVERNANCE_RECORDS/PILOT_Q1_Q6_FINALIZATION_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/PILOT_Q1_Q6_FINALIZATION_V1.json",
+      "sha256": "beaf37789cd31148ec26529eec2ef95ff906520e02ca694e59e6514959bc86e9"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/08_PILOT_RESULTS/pilot_6_items.jsonl",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/pilot_6_items.jsonl",
+      "sha256": "1fe3296558b8ad85ec6ccffd1b41ab34aa80b5d44036a562fdb922f651ef9546"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/05_VERIFICATION/Q5/QC_PILOT_05_POSTGEN_GROUNDING_REVIEW_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/QC_PILOT_05_POSTGEN_GROUNDING_REVIEW_V1.json",
+      "sha256": "d181ebf1e968916010b5d83f4de6b29f6d2ac4be4a724c1cd79a5d3db0ed47e2"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/03_SOURCE_REVIEW/Q6/QC_PILOT_06_PREGEN_GROUNDING_REVIEW_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/QC_PILOT_06_PREGEN_GROUNDING_REVIEW_V1.json",
+      "sha256": "06c7cbbdaa99d295940725c6c66faed1b52b34f7047abc969f1c6261fbc031da"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/03_SOURCE_REVIEW/Q6/QC_PILOT_06_SOURCE_RESELECTION_REVIEW_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/QC_PILOT_06_SOURCE_RESELECTION_REVIEW_V1.json",
+      "sha256": "46d227ccbb9db3609d925c60d60aa7238640e12f96d90b95aa1ff6d5e178928d"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/00_SYSTEM_RULES/QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1.json",
+      "sha256": "d8e28bb8d40dc161c194fbfac71b3583e0e2d0fcd10d6ee8c1e82d730302d4eb"
+    },
+    {
+      "source": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/00_SYSTEM_RULES/QG_AI_AUTO_GROUNDING_HUMAN_REVIEW_RULE_V1.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/QG_AI_AUTO_GROUNDING_HUMAN_REVIEW_RULE_V1.json",
+      "sha256": "aa7f81b158662f0eb98326e2b2a7f65f523fe86ba24be68eab144e1173a65e79"
+    },
+    {
+      "source": "/content/drive/MyDrive/SourceGuard_Git/sourceguard/source_index/index_manifest.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/index_manifest.json",
+      "sha256": "dfdbbbf68301d3f3726fa59c4f5937dcf882e64430d7d1ff1d3200033d8fe58d"
+    },
+    {
+      "source": "/content/drive/MyDrive/SourceGuard_Git/sourceguard/gold/page08/PAGE08_GOLD_INDEX.json",
+      "snapshot": "/content/drive/MyDrive/test_examtrust/PROJECT_CLOSURE/EXAMTRUST_PROJECT_CLOSURE_V1/CRITICAL_DOCUMENT_SNAPSHOT/PAGE08_GOLD_INDEX.json",
+      "sha256": "04f2d4ed8947d85dfbc4381d6d4abe5e7ee44e4d61707c3e17ed21d022a7689a"
+    }
+  ],
+  "immutability": [
+    "Do not rewrite existing Git tags.",
+    "Do not mutate Page08 Gold.",
+    "Do not regenerate frozen Runtime Source Index.",
+    "Do not overwrite Q1-Q6 historical artifacts.",
+    "Do not rewrite Pilot Question History.",
+    "Future work creates new versions/artifacts."
+  ],
+  "remaining_pre_submission": [
+    "8-page holdout",
+    "benchmark with raw timing",
+    "Prompt Log Index",
+    "OWNERSHIP.md",
+    "source metadata and usage rights",
+    "architecture figure",
+    "real Teacher Review screenshots",
+    "pitch/demo videos",
+    "public evidence links",
+    "final secret/privacy audit",
+    "reduce dossier to <=12 pages"
+  ]
+}
