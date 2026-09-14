@@ -256,3 +256,100 @@ Nguồn văn bản nêu rõ: khi di chuyển kính hiển vi từ vị trí (1) 
 - Git mutation: `NO`
 - Checkpoint / Freeze: `NO`
 
+## Q5 — QC_PILOT_05
+
+- Pilot Slot: `Q5`
+- Scope: `SOURCE_BOUNDED_EXPANDED`
+- Target Cognitive Level: `APPLY`
+- Context: `B21`
+- Sources: `PHY12_P91_R03 + PHY12_P91_R07`
+
+### Pipeline History
+
+- Structural Preflight: `PASS`
+- Human Visibility: `VISIBLE_CLEAR`
+- Semantic Gate V1: `HOLD_NO_VALID_SOURCE_SET`
+- Semantic Gate V1 hold reason: `S2_r07_knowledge_relation_sufficient, S3_both_sources_necessary` not proven.
+- Semantic Gate V2: `PASS_FOR_GENERATION` after same-page / same-context human re-review.
+- Semantic Gate V1 was preserved and not mutated.
+
+### Human Component Review
+
+- `PHY12_P91_R03` approved component indices: `[1, 2]`
+- `PHY12_P91_R07` approved component indices: `[1, 2]`
+- `PHY12_P91_R07 C3`: `EXCLUDED`
+- Component Review State: `PASS`
+
+### Controlled Generation V1.1
+
+- Model: `gemini-3.6-flash`
+- Candidate State: `GENERATED_STRUCTURALLY_VALID`
+- Hard Structural Validation: `PASS`
+
+**Generated question:**
+
+Trong thí nghiệm tán xạ hạt alpha của Rutherford, một nhà khoa học sử dụng kính hiển vi M quan sát màn S phủ chất huỳnh quang. Tại vị trí (1), kính hiển vi đếm được trung bình $4 \cdot 10^5$ đốm sáng do các hạt alpha đập vào màn S trong mỗi phút. Nếu di chuyển kính hiển vi M đến vị trí (2), số đốm sáng quan sát được trên màn S trong một phút ước tính là bao nhiêu?
+
+- **A.** 40 đốm sáng
+- **B.** 400 đốm sáng
+- **C.** 40.000 đốm sáng
+- **D.** 4.10^9 đốm sáng
+
+- Proposed answer: `A`
+
+**Generated explanation:**
+
+Theo nguồn PHY12_P91_R03, các đốm sáng xuất hiện trên màn S (có phủ chất huỳnh quang) do các hạt alpha đập vào và được quan sát bằng kính hiển vi M. Theo nguồn PHY12_P91_R07, khi di chuyển kính hiển vi từ vị trí (1) đến vị trí (2), tần suất đốm sáng xuất hiện trên màn S giảm đi rất nhanh, tại vị trí (2) tần suất ít hơn so với tại vị trí (1) cỡ 10^4 lần. Do đó, số đốm sáng quan sát được trong một phút tại vị trí (2) là: (4 . 10^5) / 10^4 = 40 đốm sáng.
+
+### Pilot Engineering Observation
+
+The generated candidate introduced the absolute datum `4×10^5 đốm sáng/phút` at position (1). During pilot inspection this datum was identified as not present in the approved original evidence.
+
+The approved evidence supports the relative statement that the frequency at position (2) is approximately `10^4` times lower than at position (1), but the generation candidate introduced an absolute starting value in order to manufacture a numerical calculation.
+
+This pilot observation contributed directly to creation of the generic `QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1`, including mandatory:
+
+- Coherent Evidence Bundle
+- Fact Ledger
+- Number / Unit / Quantity Ledger
+- Relation Ledger
+- Multi-source Composition Review
+- Pre-generation Grounding Gate
+
+### Post-generation Grounding Review
+
+- Formal Review Decision: `HUMAN_REVIEW_INCOMPLETE`
+- Source/Evidence Validation: `NOT_COMPLETED`
+- Teacher Review: `NOT_REACHED`
+- Ready for Use: `NO`
+- Publication: `NOT_PUBLISHED`
+
+> Q5 is preserved as pilot / regression / engineering-history evidence. It is not treated as a published question.
+
+### Artifact Provenance
+
+| Artifact | SHA256 |
+|---|---|
+| Source Sufficiency Review V1 | `f7d0e1b3a3b0cf2ca0dc6d8d2e2c023b2605bbc6942faa598e8219d042b5c687` |
+| Human Visibility Check V1 | `bb7712ced785b0a18acac5f37fff59d2dd1282ab7b1172e3e8963a1b7b9cfa56` |
+| Semantic Gate V1 | `65807dbe2cc3a460d94b36e2ec3eab815e812aca1481473e428bb81c34cf096d` |
+| Semantic Gate V2 | `ce01a34a3ce67766a9a5a8fb3f8e9608b18de62c7fa4fbe7c8683ee61a4d7c1c` |
+| Generation Evidence Allowlist V1 | `f9683a6702b7748317444a37236b6ccfd7dc71d0382fc0fc359d5d59c14c2be9` |
+| Generation Package V1 | `1d14bcae8bb53da5cc954f6801248d5c5ea5631529f7cd8576bbecee2fea2955` |
+| Raw Model Response V1.1 | `f942d82cdf67a3ace6c556e1888edc29486575e2c1ab43423fe7969a12bef46b` |
+| Candidate V1.1 | `c3535d6480ad07fa21a3e58133a720bef78bd6485787ba33ddc93a21ff50d3e9` |
+| Post-generation Grounding Review V1 | `d181ebf1e968916010b5d83f4de6b29f6d2ac4be4a724c1cd79a5d3db0ed47e2` |
+| Source-Grounding Rule V1 | `d8e28bb8d40dc161c194fbfac71b3583e0e2d0fcd10d6ee8c1e82d730302d4eb` |
+
+### Governance
+
+- Candidate mutation: `NO`
+- Frozen SourceGuard mutation: `NO`
+- Runtime Source Index mutation: `NO`
+- Question Contract mutation: `NO`
+- Q5 Allowlist mutation: `NO`
+- `pilot_6_items.jsonl` mutation: `NO`
+- Q5 publication: `NO`
+- Checkpoint / Freeze: `NO`
+- History record appended at UTC: `2026-09-14T02:47:36.848421+00:00`
+
