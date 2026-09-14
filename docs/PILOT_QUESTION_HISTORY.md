@@ -353,3 +353,58 @@ This pilot observation contributed directly to creation of the generic `QG_SOURC
 - Checkpoint / Freeze: `NO`
 - History record appended at UTC: `2026-09-14T02:47:36.848421+00:00`
 
+## Q6 — QC_PILOT_06
+
+- Scope: `SOURCE_BOUNDED_EXPANDED`
+- Target Cognitive Level: `ADVANCED`
+- Context: `B21`
+- Sources: `PHY12_P91_R03 + PHY12_P91_R07 + PHY12_P91_V03`
+- Visual Required: `TRUE`
+
+### Automated Pre-generation Grounding
+
+- AI Facts Proposed: `5`
+- Human-approved Facts: `5`
+- Approved Numeric Entries: `3`
+- Approved Relations: `2`
+- Coherent Evidence: `PASS`
+- ADVANCED Question Opportunity: `FAIL`
+- Multi-source M1–M8: `FAIL`
+- Pre-generation Grounding: `HOLD_NO_VALID_SOURCE_SET`
+- Generation Allowed: `NO`
+- Grounding Guard: `BLOCKED`
+- Question Generated: `NO`
+- Teacher: `UNVERIFIED`
+- Ready for Use: `NO`
+
+### Engineering Finding
+
+The automated grounding interpreter determined that the approved R03/R07/V03 evidence does not naturally support an ADVANCED question requiring all three sources.
+
+The visual V03 is not necessary for a valid ADVANCED solution path, and constructing a three-step advanced problem would require external physics knowledge or artificial fragment composition.
+
+Therefore `HOLD_NO_VALID_SOURCE_SET` is preserved as the correct safe system outcome.
+
+### QG Governance Learning
+
+Q6 validated the operating pattern:
+
+`AI Evidence Interpretation → Human Quick Review → Grounding Guard`
+
+Humans review and approve AI-extracted evidence rather than manually constructing Fact / Number / Relation ledgers.
+
+### Provenance
+
+- AI Grounding Proposal SHA: `035e9b392f45c590e7284525d6ab7f519119290d58374798365e255b37d395cc`
+- Pre-generation Review SHA: `06c7cbbdaa99d295940725c6c66faed1b52b34f7047abc969f1c6261fbc031da`
+- Pre-generation MD SHA: `a448180c8ad6a2979d3f13460aabcc4ad2f43229682913f955d7076457d4adfe`
+- Base Grounding Rule SHA: `d8e28bb8d40dc161c194fbfac71b3583e0e2d0fcd10d6ee8c1e82d730302d4eb`
+
+### Governance
+
+- Question generation: `NO`
+- `pilot_6_items.jsonl` mutation: `NO`
+- Frozen/runtime mutation: `NO`
+- Contract mutation: `NO`
+- Q6 retained as pilot grounding evidence.
+

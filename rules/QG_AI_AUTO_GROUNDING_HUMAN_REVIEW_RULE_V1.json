@@ -1,0 +1,110 @@
+{
+  "schema": "examtrust.qg.ai_auto_grounding_human_review_rule.v1",
+  "rule_id": "QG_AI_AUTO_GROUNDING_HUMAN_REVIEW_RULE_V1",
+  "version": "1.0.0",
+  "state": "FROZEN_RULE",
+  "created_at_utc": "2026-09-14T03:06:30.369130+00:00",
+  "parent_rule": {
+    "rule_id": "QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1",
+    "path": "/content/drive/MyDrive/test_examtrust/QUESTION_GENERATION_PILOT/00_SYSTEM_RULES/QG_SOURCE_GROUNDING_AND_COMPOSITION_RULE_V1.json",
+    "sha256": "d8e28bb8d40dc161c194fbfac71b3583e0e2d0fcd10d6ee8c1e82d730302d4eb"
+  },
+  "core_principle": "AI performs source comparison, extraction, semantic matching, ledger construction and rule evaluation. Human reviewers inspect the original evidence and approve, reject, or correct the AI proposal. Humans are not required to manually reconstruct the ledgers.",
+  "mandatory_pipeline": [
+    "APPROVED_SOURCE_EVIDENCE",
+    "AI_EVIDENCE_INTERPRETER",
+    "AUTO_FACT_LEDGER",
+    "AUTO_NUMBER_UNIT_QUANTITY_LEDGER",
+    "AUTO_RELATION_LEDGER",
+    "AUTO_COHERENCE_CHECK",
+    "AUTO_MULTI_SOURCE_COMPOSITION_CHECK",
+    "AUTO_COGNITIVE_OPPORTUNITY_CHECK",
+    "HUMAN_QUICK_REVIEW",
+    "PRE_GENERATION_GROUNDING_GATE",
+    "GROUNDING_GUARD",
+    "CONTROLLED_GENERATION",
+    "POST_GENERATION_GROUNDING_VALIDATION",
+    "COGNITIVE_VALIDATION",
+    "TEACHER_APPROVAL",
+    "READY_FOR_USE"
+  ],
+  "ai_responsibilities": [
+    "Read approved source evidence.",
+    "Extract source-supported factual claims.",
+    "Extract numbers together with their exact quantity meaning and unit/context.",
+    "Extract explicit or directly derivable semantic relations.",
+    "Evaluate evidence coherence.",
+    "Evaluate multi-source composition requirements.",
+    "Evaluate whether the requested cognitive level is naturally supported.",
+    "Compare all proposed claims against the grounding rules.",
+    "Propose PASS or HOLD conservatively.",
+    "Expose all proposed facts, numbers and relations to the human reviewer."
+  ],
+  "human_responsibilities": [
+    "Inspect original approved evidence.",
+    "Review AI-extracted facts, numbers, quantities and relations.",
+    "Reject or deselect incorrect AI proposals.",
+    "Correct an individual proposal when necessary.",
+    "Approve or reject the resulting grounding review."
+  ],
+  "human_not_required_to": [
+    "Manually construct the Fact Ledger from scratch.",
+    "Manually construct the Number/Unit/Quantity Ledger from scratch.",
+    "Manually construct the Relation Ledger from scratch.",
+    "Manually invent cross-source semantic links.",
+    "Manually design the question before generation."
+  ],
+  "authorization_invariants": {
+    "ai_analysis_equals_ai_approval": false,
+    "ai_self_authorization_allowed": false,
+    "human_review_required": true,
+    "human_review_is_validation_not_manual_reconstruction": true,
+    "source_grounding_required": true,
+    "unsupported_evidence_action": "HOLD_NO_VALID_SOURCE_SET",
+    "generation_before_grounding_guard_pass_allowed": false
+  },
+  "source_grounding_invariant": {
+    "statement": "Every fact, number, unit, quantity, semantic relation and required reasoning step must remain traceable to approved original evidence.",
+    "unsupported_fact_allowed": false,
+    "unsupported_number_allowed": false,
+    "unsupported_unit_allowed": false,
+    "unsupported_quantity_allowed": false,
+    "unsupported_relation_allowed": false,
+    "external_semantic_bridge_allowed": false,
+    "artificial_complexity_allowed": false
+  },
+  "multi_source_invariant": {
+    "same_page_proves_relation": false,
+    "same_context_proves_relation": false,
+    "same_chapter_proves_relation": false,
+    "cross_source_relation_must_be_source_supported": true,
+    "all_declared_required_sources_must_be_necessary": true,
+    "fragment_stitching_to_manufacture_difficulty_allowed": false
+  },
+  "human_quick_review_ui": {
+    "default_behavior": "AI proposals may be preselected for review. The human reviewer removes/rejects incorrect proposals and explicitly confirms the retained set.",
+    "show_original_evidence": true,
+    "show_facts": true,
+    "show_numbers_units_quantities": true,
+    "show_relations": true,
+    "show_coherence_assessment": true,
+    "show_cognitive_opportunity": true,
+    "show_multi_source_assessment": true,
+    "explicit_human_confirmation_required": true
+  },
+  "hold_is_valid_output": true,
+  "sourceguard_architecture_unchanged": "Container → Object → ReadingRegion → Anchor → ReadingLane → RegionGrowing → Validation → Render",
+  "governance": {
+    "pilot_derived": true,
+    "pilot_learning_source": [
+      "QC_PILOT_05",
+      "QC_PILOT_06"
+    ],
+    "generic_rule": true,
+    "page_specific_logic": false,
+    "candidate_specific_logic": false,
+    "source_specific_logic": false,
+    "human_approved_rule_freeze": true,
+    "checkpoint_requested_by_user": true
+  }
+}
