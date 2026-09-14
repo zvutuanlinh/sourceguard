@@ -408,3 +408,63 @@ Humans review and approve AI-extracted evidence rather than manually constructin
 - Contract mutation: `NO`
 - Q6 retained as pilot grounding evidence.
 
+
+### Q6 Final Source Reselection Disposition
+
+- Initial Q6 source set: `PHY12_P91_R03 + PHY12_P91_R07 + PHY12_P91_V03`.
+- Initial Pre-generation Grounding: `HOLD_NO_VALID_SOURCE_SET`.
+- Initial Grounding Guard: `BLOCKED`.
+- Source Reselection Scope: all six frozen runtime Source Units available in `P91 / B21`.
+- Candidate pool: `PHY12_P91_R02, PHY12_P91_R03, PHY12_P91_R07, PHY12_P91_V01, PHY12_P91_V02, PHY12_P91_V03`.
+- AI Source Reselection Decision: `FINAL_HOLD_NO_VALID_SOURCE_SET`.
+- Human Source Reselection Decision: `FINAL_HOLD_NO_VALID_SOURCE_SET`.
+- Approved Replacement Source Set: `NONE`.
+- Question Generated: `NO`.
+- Teacher Review: `NOT_REACHED / UNVERIFIED`.
+- Ready for Use: `NO`.
+- Publication: `NOT_PUBLISHED`.
+
+**Interpretation:**
+
+Q6 does **not** establish that SourceGuard/QG is incapable of generating an ADVANCED question. It establishes only that the currently authorized bounded evidence universe `P91/B21` does not contain a naturally valid multi-source set that can support the requested ADVANCED cognitive level without external physics knowledge or artificial fragment stitching.
+
+When the authorized source universe is widened in future runs — for example across additional pages, ReadingRegions, contexts, or chapters — the system may legitimately select a richer coherent evidence bundle and generate `SOURCE_BOUNDED_EXPANDED / ADVANCED`, provided the same grounding and composition rules pass.
+
+**Safety significance:**
+
+`FINAL_HOLD_NO_VALID_SOURCE_SET` is a successful terminal safety outcome. The system refused to manufacture difficulty or introduce unsupported knowledge merely to satisfy the requested ADVANCED slot.
+
+- Source Reselection Review SHA256: `46d227ccbb9db3609d925c60d60aa7238640e12f96d90b95aa1ff6d5e178928d`
+- Final disposition recorded UTC: `2026-09-14T03:19:45.330228+00:00`
+
+---
+
+## Pilot Q1–Q6 Final Disposition
+
+| Slot | Scope | Target | Final pilot disposition | Question generated | Ready / Published |
+|---|---|---|---|---|---|
+| Q1 | NON_EXPANDED | UNDERSTAND | APPROVED | YES | READY / PUBLISHED |
+| Q2 | NON_EXPANDED | APPLY | APPROVED | YES | READY / PUBLISHED |
+| Q3 | NON_EXPANDED | ADVANCED | HOLD_NO_VALID_SOURCE_SET | NO | NO |
+| Q4 | SOURCE_BOUNDED_EXPANDED | UNDERSTAND | APPROVED | YES | READY / PUBLISHED |
+| Q5 | SOURCE_BOUNDED_EXPANDED | APPLY | NEGATIVE_PILOT_EVIDENCE_RETAINED | YES | NO / NOT_PUBLISHED |
+| Q6 | SOURCE_BOUNDED_EXPANDED | ADVANCED | FINAL_HOLD_NO_VALID_SOURCE_SET | NO | NO / NOT_PUBLISHED |
+
+### Pilot-level interpretation
+
+The six-slot pilot exercised three distinct safety/quality behaviors:
+
+1. `SUPPORTED_GENERATION` — Q1, Q2 and Q4 reached Ready/Published state.
+2. `PRE_GENERATION_SAFE_HOLD` — Q3 and Q6 demonstrated refusal when the approved source evidence could not naturally support the requested cognitive level.
+3. `POST_GENERATION_GROUNDING_FAILURE_DETECTION` — Q5 exposed a structurally valid candidate that introduced an unsupported absolute quantity and was retained as negative regression evidence.
+
+Therefore the pilot is not interpreted simply as a count of generated questions. Its purpose is to validate that the pipeline can both generate supported questions and block unsupported ones.
+
+### Future expanded-source behavior
+
+The current pilot is source-bounded. Future production runs may search a broader approved source universe. A wider source pool may provide coherent evidence sufficient for APPLY/ADVANCED items that the current `P91/B21` context cannot support.
+
+The same invariant remains mandatory:
+
+`Broader source access may increase generation opportunity; it may never relax source grounding.`
+
