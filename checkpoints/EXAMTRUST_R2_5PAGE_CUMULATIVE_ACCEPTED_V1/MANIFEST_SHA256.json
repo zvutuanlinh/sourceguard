@@ -1,0 +1,49 @@
+{
+  "manifest_id": "EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1_SHA256_MANIFEST_V1",
+  "checkpoint_id": "EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1",
+  "algorithm": "SHA256",
+  "self_hash_policy": "MANIFEST_DOES_NOT_HASH_ITSELF",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "CHECKPOINT.json",
+      "bytes": 4916,
+      "sha256": "31d32054102c8ae4d8b48b2061f57c12a8748ed02a00cc9a863f22a0f28d31c0"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 2165,
+      "sha256": "44d85fd1f2e84da379dc62f07ad7e27e48d67f0c07243b949240512c3082baaf"
+    },
+    {
+      "path": "EVIDENCE/P06_FINAL_LABEL_REVIEW_V3.png",
+      "bytes": 345731,
+      "sha256": "6a1b2876d44b3f6b212e805ea65531b2cd53b7260c715aa5e04c81176c4d72e6"
+    },
+    {
+      "path": "EVIDENCE/P07_FINAL_LABEL_REVIEW_V3.png",
+      "bytes": 294855,
+      "sha256": "3471aa3249b5b809906bb1146b902e275e6ce7efc3378655a210b37b93ebb859"
+    },
+    {
+      "path": "EVIDENCE/P11_FINAL_LABEL_REVIEW_V3.png",
+      "bytes": 268015,
+      "sha256": "5b0ce1a0727f95c75df7ff8835fa86731c0dcc7da7fea4c924e50431deb9dbad"
+    },
+    {
+      "path": "EVIDENCE/P12_FINAL_LABEL_REVIEW_V3.png",
+      "bytes": 348742,
+      "sha256": "4dc143391ad5cf1a5af4be9d51e35ed040b23728206b06790722f43c86ebaba2"
+    },
+    {
+      "path": "EVIDENCE/P29_FINAL_LABEL_REVIEW_V3.png",
+      "bytes": 325512,
+      "sha256": "0ce5b248976b37511f753e846654eab482fe49425ca49df10c6d26b8cb59dfa6"
+    },
+    {
+      "path": "examtrust_pipeline_EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1.py",
+      "bytes": 229126,
+      "sha256": "91915ed5950f7fab301d2859e48ab5b854939c0d62b97f8364c8fdb8e2c5ddcb"
+    }
+  ]
+}
