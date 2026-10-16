@@ -1,0 +1,13 @@
+{
+  "schema": "examtrust.btc.final_question_pipeline_drive_receipt.v1",
+  "checkpoint_id": "BTC-FINAL-P06-P07-P08-QUESTION-PIPELINE-V1",
+  "created_at_utc": "2026-10-16T08:38:10.194036+00:00",
+  "checkpoint_folder": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/05_MANIFEST/BTC_FINAL_QUESTION_PIPELINE_CHECKPOINT_V1",
+  "checkpoint_json_sha256": "a515329ca603359df19261bd56af3124096a36d0ae2038dc9449abefa81bdf1a",
+  "checkpoint_md_sha256": "d0606726d531750e02252e3bd034f6541297c74967dc7f1c59a55062641aae25",
+  "artifact_index_sha256": "966094ac22316669b968cfb3c973119f0e45bfdc54730fc7b038c9ec2b3e8465",
+  "replay_guide_sha256": "6ada4b6c73feb27d864a309fdd10e87f31ee748b1354ebe0c79b102a7c8ca1ab",
+  "snapshot_count": 17,
+  "historical_artifacts_mutated": false,
+  "result": "PASS_DURABLE_DRIVE_CHECKPOINT_CREATED"
+}

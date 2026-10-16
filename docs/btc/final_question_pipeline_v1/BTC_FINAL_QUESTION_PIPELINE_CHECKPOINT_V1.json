@@ -1,0 +1,369 @@
+{
+  "schema": "examtrust.btc.final_question_pipeline_checkpoint.v1",
+  "checkpoint_id": "BTC-FINAL-P06-P07-P08-QUESTION-PIPELINE-V1",
+  "created_at_utc": "2026-10-16T08:38:10.194036+00:00",
+  "checkpoint_role": "RETROSPECTIVE_INDEX_AND_DURABLE_SNAPSHOT_OF_EXISTING_HISTORY",
+  "history_policy": {
+    "historical_artifacts_rewritten": false,
+    "question_regenerated_in_checkpoint": false,
+    "gemini_called_in_checkpoint": false,
+    "ocr_called_in_checkpoint": false,
+    "segmentation_called_in_checkpoint": false,
+    "snapshot_files_are_new": true,
+    "snapshot_files_are_claimed_as_original_history": false
+  },
+  "final_state": {
+    "question": "Dựa trên đồ thị Hình 1.5 và mô hình động học phân tử ở Hình 1.3, hãy xác định các đặc điểm về chuyển động và trạng thái của các phân tử nước trong quá trình đun sôi từ điểm A đến điểm C.",
+    "options": {
+      "A": "Trong đoạn AB, tốc độ chuyển động của các phân tử tăng dần khi nhiệt độ tăng từ 20°C đến 100°C; trong đoạn BC, xảy ra sự chuyển thế từ trạng thái các phân tử ở gần nhau, sắp xếp không trật tự sang trạng thái các phân tử ở xa nhau, chuyển động về nhiều hướng khác nhau.",
+      "B": "Trong đoạn AB, tốc độ chuyển động của các phân tử tăng dần khi nhiệt độ tăng từ 20°C đến 100°C; trong đoạn BC, nhiệt độ không đổi ở 100°C cho thấy đang xảy ra quá trình chuyển thế của nước.",
+      "C": "Trong đoạn BC, nhiệt độ nước giữ nguyên ở 100°C để thực hiện quá trình chuyển thế; các phân tử chuyển từ trạng thái ở gần nhau, sắp xếp không trật tự sang trạng thái ở xa nhau và chuyển động về nhiều hướng khác nhau.",
+      "D": "Trong đoạn AB, tốc độ chuyển động của các phân tử tăng dần khi nhiệt độ tăng từ 20°C đến 100°C; các phân tử nước chuyển từ trạng thái ở gần nhau, sắp xếp không trật tự sang trạng thái ở xa nhau, chuyển động về nhiều hướng khác nhau."
+    },
+    "correct_answer": "A",
+    "short_explanation": "Đoạn AB cho thấy nhiệt độ tăng từ 20°C đến 100°C, theo mô hình động học phân tử thì tốc độ phân tử tăng (RL01). Đoạn BC nhiệt độ không đổi là giai đoạn chuyển thế (RL02). Hình 1.3 mô tả sự chuyển từ thể lỏng (phân tử gần nhau, không trật tự) sang thể khí (phân tử xa nhau, chuyển động nhiều hướng) (RL03).",
+    "source_ids": [
+      "PHY12_P06_R03",
+      "PHY12_P07_V01",
+      "PHY12_P08_V01"
+    ],
+    "visual_reference_ids": [
+      "PHY12_P07_V01",
+      "PHY12_P08_V01"
+    ],
+    "pregen": "PASS_FOR_GENERATION",
+    "postgen": "SOURCE_EVIDENCE_PASS",
+    "cognitive_validation": "PASS",
+    "teacher_review": "APPROVED",
+    "ready_for_use": true
+  },
+  "raw_source_authority": {
+    "P06": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page06_Source.png",
+      "sha256": "3d524f1df5c37c47754ad08317c6b59c77bb2a77a2598af674b1884389f243c2"
+    },
+    "P07": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page07_Source.png",
+      "sha256": "081629b1c4973eedf8f7bddc4b2f7f93ff380b1db02ff103c0bf3e2cd6df24ed"
+    },
+    "P08": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page08_Source.png",
+      "sha256": "59c336d932a0fbe36ad2498f3658724d7d92e176710ac54bdcb2933c93932ac4"
+    }
+  },
+  "pipeline": [
+    {
+      "order": 1,
+      "stage": "RAW_SOURCE_TRUTH",
+      "action": "Bind original P06/P07/P08 page pixels as source authority.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/PILOT01_Physics12_Page06_Source.png",
+        "/content/drive/MyDrive/PILOT01_Physics12_Page07_Source.png",
+        "/content/drive/MyDrive/PILOT01_Physics12_Page08_Source.png"
+      ],
+      "what_this_proves": "The pipeline starts from actual original page pixels, not generated/cached question evidence."
+    },
+    {
+      "order": 2,
+      "stage": "SOURCE_UNIT_CANDIDATE_UNIVERSE",
+      "action": "Build the candidate Source Unit universe from P06/P07/P08.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/02_SOURCE_UNIT_CANDIDATES/HUMAN_APPROVED_P06_P07_PLUS_FROZEN_P08_V1/BTC_P06_P07_P08_SOURCE_UNIT_CANDIDATE_UNIVERSE_V1.json"
+      ],
+      "what_this_proves": "Question construction used structured source candidates rather than unrestricted textbook context."
+    },
+    {
+      "order": 3,
+      "stage": "HUMAN_SOURCE_SELECTION",
+      "action": "Human selects exactly PHY12_P06_R03 + PHY12_P07_V01 + PHY12_P08_V01.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/03_HUMAN_SOURCE_SELECTION/BTC_ADVANCED_3_SOURCE_SELECTION_V1/BTC_ADVANCED_HUMAN_3_SOURCE_SELECTION_V1.json"
+      ],
+      "what_this_proves": "AI did not autonomously widen the source boundary."
+    },
+    {
+      "order": 4,
+      "stage": "MULTI_SOURCE_COMPOSITION",
+      "action": "Validate 3-source coherence, necessity and leave-one-source-out behavior.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/04_COMPOSITION_REVIEW/BTC_ADVANCED_3_SOURCE_COMPOSITION_V1/BTC_ADVANCED_3_SOURCE_COMPOSITION_REVIEW_V1.json"
+      ],
+      "what_this_proves": "The three-source composition is not merely fragment stitching for artificial difficulty."
+    },
+    {
+      "order": 5,
+      "stage": "QUESTION_CONTRACT",
+      "action": "Freeze scope, cognitive target, selected sources, reasoning requirements and external-knowledge restrictions.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/05_QUESTION_CONTRACT/BTC_ADVANCED_CONTRACT_V1/BTC_ADVANCED_QUESTION_CONTRACT_V1.json"
+      ],
+      "what_this_proves": "Generation operates under a bounded contract rather than a free prompt."
+    },
+    {
+      "order": 6,
+      "stage": "PREGEN_GROUNDING",
+      "action": "Build/approve fact, number/unit/quantity and relation ledgers including RL01/RL02/RL03.",
+      "result": "PASS_FOR_GENERATION",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/BTC_ADVANCED_PREGEN_V1/BTC_ADVANCED_PREGEN_GROUNDING_REVIEW_V1.json"
+      ],
+      "what_this_proves": "Generation was authorized only after source sufficiency and composition passed."
+    },
+    {
+      "order": 7,
+      "stage": "CONTROLLED_GENERATION_V1",
+      "action": "Generate Candidate V1 inside the approved source boundary.",
+      "result": "STRUCTURAL_PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V1/BTC_ADVANCED_GENERATION_CANDIDATE_V1.json"
+      ],
+      "what_this_proves": "Structural generation success alone was not treated as final approval."
+    },
+    {
+      "order": 8,
+      "stage": "POSTGEN_V1",
+      "action": "Ground Candidate V1 against approved facts, relations and Step–Source Map.",
+      "result": "SOURCE_EVIDENCE_FAIL",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/09_POSTGEN_GROUNDING/BTC_ADVANCED_POSTGEN_V1/BTC_ADVANCED_POSTGEN_GROUNDING_V1.json"
+      ],
+      "what_this_proves": "The real development history contains a failed candidate; unsupported distractor relations and step-map mismatch were not hidden."
+    },
+    {
+      "order": 9,
+      "stage": "CONTROLLED_REGENERATION_V2",
+      "action": "Regenerate Candidate V2 with repaired grounding constraints; preserve the same approved source authority.",
+      "result": "GENERATED",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_RAW_V2.txt",
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_PACKAGE_V2.json"
+      ],
+      "what_this_proves": "The improvement came from controlled regeneration, not rewriting historical source evidence."
+    },
+    {
+      "order": 10,
+      "stage": "SYNTAX_ONLY_JSON_REPAIR",
+      "action": "Remove malformed trailing JSON comma without changing semantic question content.",
+      "result": "PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_RAW_V2.txt",
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_RAW_V2_JSON_REPAIRED.txt"
+      ],
+      "what_this_proves": "Serialization repair is distinguished from semantic regeneration."
+    },
+    {
+      "order": 11,
+      "stage": "CANDIDATE_V2_FINALIZATION",
+      "action": "Finalize Candidate V2 with RL01/RL02/RL03 and all three selected sources.",
+      "result": "STRUCTURAL_PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_CANDIDATE_V2.json"
+      ],
+      "what_this_proves": "The final candidate is a new immutable candidate, not an in-place mutation of failed V1."
+    },
+    {
+      "order": 12,
+      "stage": "POSTGEN_V2",
+      "action": "Validate claims, numbers, quantities, relations, visuals and Step–Source Map.",
+      "result": "SOURCE_EVIDENCE_PASS",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/09_POSTGEN_GROUNDING/BTC_ADVANCED_POSTGEN_V2/BTC_ADVANCED_POSTGEN_GROUNDING_V2.json"
+      ],
+      "what_this_proves": "The final candidate passed source grounding after generation."
+    },
+    {
+      "order": 13,
+      "stage": "COGNITIVE_AND_TEACHER_GATE",
+      "action": "Validate cognitive requirements and require explicit Teacher Approval.",
+      "result": "APPROVED",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_ADVANCED_FINAL_V2.json",
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_FINAL_CHECKPOINT_V2.json"
+      ],
+      "what_this_proves": "Machine PASS did not bypass the human approval boundary."
+    },
+    {
+      "order": 14,
+      "stage": "READY_FOR_USE",
+      "action": "Close the final candidate as Ready for Use.",
+      "result": "READY_FOR_USE",
+      "artifacts": [
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_ADVANCED_FINAL_V2.json",
+        "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_FINAL_CHECKPOINT_V2.json"
+      ],
+      "what_this_proves": "The final question reached publication/demo eligibility only after all preceding gates."
+    }
+  ],
+  "important_sha256": {
+    "candidate_v1": "af504a8336ef754ffa28c7fab0d7fc7d6075572b89e8adbfcf01f87820814dca",
+    "postgen_v1_fail": "7460b8f0ea93f0d7a2a1407c5349230712d326055df0a9f64354bb2437bc4d12",
+    "generation_raw_v2": "91f9603eaf98d926f1102b957301136e878f94464652d5825ecafc65a710b489",
+    "generation_raw_v2_json_repaired": "4d221721b5fce06482b25851034425f5eff03faf90d3e5c021b9f7783ba4ef91",
+    "candidate_v2": "7b5a6a69cf0cc56f55584074faec8d2a1cba8df4029a24d94db42f7fbc59b862",
+    "postgen_v2_pass": "f0719db4f4256628fb56a580dddc6000fe713b11d90dbd78ff78e660a21ca669",
+    "final_approved_item": "302502fe7bd281dd2410439b0d6efa6af86f71d64e2d046661615c694e4517df",
+    "final_checkpoint": "41dcfe1d7cdabdc8b5ab15afa6330abde1d70a45ddbfbe6b5eaf36fbda6db716",
+    "question_contract": "0bc489635581413113e579756abcee6874968251c9b982601a03f2631d55ed35",
+    "pregen": "3397a0733bc8fd0a5b6bb9c1507c90ed9456abefc64e64598927cbba9eafa757"
+  },
+  "snapshot_index": [
+    {
+      "snapshot_file": "SNAPSHOTS/RAW_P06.png",
+      "original_path": "/content/drive/MyDrive/PILOT01_Physics12_Page06_Source.png",
+      "sha256": "3d524f1df5c37c47754ad08317c6b59c77bb2a77a2598af674b1884389f243c2",
+      "bytes": 270696,
+      "original_created_at_if_recorded": null,
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/RAW_P07.png",
+      "original_path": "/content/drive/MyDrive/PILOT01_Physics12_Page07_Source.png",
+      "sha256": "081629b1c4973eedf8f7bddc4b2f7f93ff380b1db02ff103c0bf3e2cd6df24ed",
+      "bytes": 273340,
+      "original_created_at_if_recorded": null,
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/RAW_P08.png",
+      "original_path": "/content/drive/MyDrive/PILOT01_Physics12_Page08_Source.png",
+      "sha256": "59c336d932a0fbe36ad2498f3658724d7d92e176710ac54bdcb2933c93932ac4",
+      "bytes": 253426,
+      "original_created_at_if_recorded": null,
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/01_candidate_universe.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/02_SOURCE_UNIT_CANDIDATES/HUMAN_APPROVED_P06_P07_PLUS_FROZEN_P08_V1/BTC_P06_P07_P08_SOURCE_UNIT_CANDIDATE_UNIVERSE_V1.json",
+      "sha256": "47e323ae7c083315e85d804e4e124300156c6a2784e2a96a839f88006513d118",
+      "bytes": 43139,
+      "original_created_at_if_recorded": "2026-10-16T06:39:14.512798+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/02_human_source_selection.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/03_HUMAN_SOURCE_SELECTION/BTC_ADVANCED_3_SOURCE_SELECTION_V1/BTC_ADVANCED_HUMAN_3_SOURCE_SELECTION_V1.json",
+      "sha256": "9fa8d26dcb31abcfc1e5427a4750cdd37122a5decf3b8c869c71a95e59eae224",
+      "bytes": 3158,
+      "original_created_at_if_recorded": "2026-10-16T06:51:43.875595+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/03_composition_review.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/04_COMPOSITION_REVIEW/BTC_ADVANCED_3_SOURCE_COMPOSITION_V1/BTC_ADVANCED_3_SOURCE_COMPOSITION_REVIEW_V1.json",
+      "sha256": "24c28aa0778ae74147769b8ba458d3883e24f65af0650d57edbaca366d9060ae",
+      "bytes": 2773,
+      "original_created_at_if_recorded": "2026-10-16T06:54:36.774726+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/04_question_contract.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/05_QUESTION_CONTRACT/BTC_ADVANCED_CONTRACT_V1/BTC_ADVANCED_QUESTION_CONTRACT_V1.json",
+      "sha256": "0bc489635581413113e579756abcee6874968251c9b982601a03f2631d55ed35",
+      "bytes": 7010,
+      "original_created_at_if_recorded": "2026-10-16T07:00:51.023443+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/05_pregen_grounding.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/BTC_ADVANCED_PREGEN_V1/BTC_ADVANCED_PREGEN_GROUNDING_REVIEW_V1.json",
+      "sha256": "3397a0733bc8fd0a5b6bb9c1507c90ed9456abefc64e64598927cbba9eafa757",
+      "bytes": 13577,
+      "original_created_at_if_recorded": "2026-10-16T07:18:37.958624+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/06_candidate_v1.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V1/BTC_ADVANCED_GENERATION_CANDIDATE_V1.json",
+      "sha256": "af504a8336ef754ffa28c7fab0d7fc7d6075572b89e8adbfcf01f87820814dca",
+      "bytes": 5915,
+      "original_created_at_if_recorded": "2026-10-16T07:21:06.768952+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/07_postgen_v1_fail.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/09_POSTGEN_GROUNDING/BTC_ADVANCED_POSTGEN_V1/BTC_ADVANCED_POSTGEN_GROUNDING_V1.json",
+      "sha256": "7460b8f0ea93f0d7a2a1407c5349230712d326055df0a9f64354bb2437bc4d12",
+      "bytes": 4083,
+      "original_created_at_if_recorded": "2026-10-16T07:24:51.646878+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/08_generation_raw_v2.txt",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_RAW_V2.txt",
+      "sha256": "91f9603eaf98d926f1102b957301136e878f94464652d5825ecafc65a710b489",
+      "bytes": 5065,
+      "original_created_at_if_recorded": null,
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/09_generation_raw_v2_json_repaired.txt",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_RAW_V2_JSON_REPAIRED.txt",
+      "sha256": "4d221721b5fce06482b25851034425f5eff03faf90d3e5c021b9f7783ba4ef91",
+      "bytes": 5061,
+      "original_created_at_if_recorded": null,
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/10_generation_package_v2.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_PACKAGE_V2.json",
+      "sha256": "8fa7c7add2819f88d75db101af125570143351eb68ed82d24f3e8ea2e23ba7cf",
+      "bytes": 10603,
+      "original_created_at_if_recorded": "2026-10-16T07:26:36.072334+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/11_candidate_v2.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/BTC_ADVANCED_GENERATION_CANDIDATE_V2.json",
+      "sha256": "7b5a6a69cf0cc56f55584074faec8d2a1cba8df4029a24d94db42f7fbc59b862",
+      "bytes": 8457,
+      "original_created_at_if_recorded": "2026-10-16T07:28:48.397772+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/12_postgen_v2_pass.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/09_POSTGEN_GROUNDING/BTC_ADVANCED_POSTGEN_V2/BTC_ADVANCED_POSTGEN_GROUNDING_V2.json",
+      "sha256": "f0719db4f4256628fb56a580dddc6000fe713b11d90dbd78ff78e660a21ca669",
+      "bytes": 6019,
+      "original_created_at_if_recorded": "2026-10-16T07:35:33.431759+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/13_final_approved_item.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_ADVANCED_FINAL_V2.json",
+      "sha256": "302502fe7bd281dd2410439b0d6efa6af86f71d64e2d046661615c694e4517df",
+      "bytes": 3780,
+      "original_created_at_if_recorded": "2026-10-16T07:37:02.755847+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    },
+    {
+      "snapshot_file": "SNAPSHOTS/14_final_checkpoint_v2.json",
+      "original_path": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/03_EVIDENCE/BTC_IMPROVEMENT_MULTI_SOURCE_P06_P07_P08_V1/07_PREGEN_GROUNDING/08_CONTROLLED_GENERATION/BTC_ADVANCED_GENERATION_V2/10_FINAL_APPROVAL/BTC_ADVANCED_FINAL_V2/BTC_FINAL_CHECKPOINT_V2.json",
+      "sha256": "41dcfe1d7cdabdc8b5ab15afa6330abde1d70a45ddbfbe6b5eaf36fbda6db716",
+      "bytes": 1203,
+      "original_created_at_if_recorded": "2026-10-16T07:37:02.838815+00:00",
+      "copy_is_new_checkpoint_snapshot": true,
+      "historical_original_mutated": false
+    }
+  ]
+}
