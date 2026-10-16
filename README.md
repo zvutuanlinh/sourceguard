@@ -228,3 +228,111 @@ This component-review control is downstream of SourceGuard extraction and does n
 `Container → Object → ReadingRegion → Anchor → ReadingLane → RegionGrowing → Validation → Render`
 
 <!-- SOURCEGUARD_QG_COMPONENT_REVIEW_RULE_END -->
+
+---
+
+<!-- BTC_FINAL_VERIFICATION_START -->
+
+## BTC/BGK Final Verification — ExamTrust AI 2026
+
+This repository contains the auditable Stage-2 implementation and verification history of **ExamTrust AI / SourceGuard**.
+
+The core acceptance principle is source-grounded and fail-closed: generated content is accepted only when required claims and reasoning steps are traceable to approved source evidence.
+
+### What was improved after BTC/BGK feedback
+
+| BTC/BGK concern | Current state | Direct evidence |
+|---|---|---|
+| Generated information may be wrong or outside the corpus | **ADDRESSED** — approved evidence + pre-generation grounding + Grounding Guard + post-generation verification + teacher review | [BTC audit guide](docs/btc/README_BTC_PROJECT_AUDIT.md), [Pilot history](docs/PILOT_QUESTION_HISTORY.md) |
+| OCR may miss required knowledge | **ADDRESSED WITH VALIDATION/HUMAN REVIEW** — OCR is auxiliary evidence, not the sole source authority | [BTC audit guide](docs/btc/README_BTC_PROJECT_AUDIT.md) |
+| Complex questions require multiple knowledge sources | **ADDRESSED** — multi-SourceUnit composition + Step–Source Map | [Final checkpoint](docs/btc/final_question_pipeline_v1/BTC_FINAL_QUESTION_PIPELINE_CHECKPOINT_V1.md) |
+| Mechanism preventing outside-source knowledge needs to be explicit | **ADDRESSED / FAIL-CLOSED** — unsupported output cannot become `READY_FOR_USE` | [Pilot history](docs/PILOT_QUESTION_HISTORY.md) |
+| Reuse previously processed knowledge | **PARTIALLY ADDRESSED** — Runtime Source Index + Retrieval Runtime; no claim of a complete large-scale multi-document database | `sourceguard-runtime-index-v1`, `sourceguard-retrieval-runtime-v1` |
+| Broader experimental coverage | **EXTENDED** from Page08 to Page91 and multi-page R2 evidence, without claiming validation across many independent academic domains | [BTC audit guide](docs/btc/README_BTC_PROJECT_AUDIT.md) |
+
+### Directly runnable verification
+
+BTC/BGK can inspect and run:
+
+```text
+code/examtrust_btc_p06_p07_p08_pipeline_from_raw.py
+```
+
+Canonical SHA256:
+
+```text
+4a2b7a6bf82251ea289139481d1e68c142256a94532d5872733225fea18d3978
+```
+
+[HOW_TO_RERUN_FROM_BLANK_COLAB.md](docs/btc/HOW_TO_RERUN_FROM_BLANK_COLAB.md)
+
+[Reusable pipeline provenance receipt](docs/btc/final_question_pipeline_v1/RAW_TO_READY_REUSABLE_PIPELINE_RECEIPT_V1.json)
+
+Pipeline-introduction commit:
+
+```text
+1d2cabed1e6f669a841399afc92c16f4b13bca0f
+```
+
+### Final P06/P07/P08 question pipeline
+
+```text
+Source selection
+→ approved evidence allowlist
+→ question contract
+→ Step–Source Map
+→ pre-generation grounding
+→ controlled generation
+→ post-generation verification
+→ teacher approval
+→ READY_FOR_USE
+```
+
+[Final question checkpoint](docs/btc/final_question_pipeline_v1/BTC_FINAL_QUESTION_PIPELINE_CHECKPOINT_V1.md)
+
+Historical checkpoint tag:
+
+```text
+btc-final-p06-p07-p08-question-v1
+```
+
+### Negative evidence is preserved
+
+The system does not force every generation case to PASS. Insufficient or unsupported evidence may correctly end in HOLD.
+
+- Q3 — `HOLD_NO_VALID_SOURCE_SET`
+- Q5 — `NEGATIVE_PILOT_EVIDENCE_RETAINED / NOT_PUBLISHED`
+- Q6 — `FINAL_HOLD_NO_VALID_SOURCE_SET`
+
+### Scope and limitations
+
+The current evidence supports:
+
+- Page08 frozen historical authority;
+- Page91 generalization checks;
+- multi-page R2 processing;
+- Runtime Source Index and Retrieval Runtime;
+- grounded Question Generation;
+- multi-source Step–Source mapping;
+- reusable RAW-to-READY verification.
+
+The current evidence does **not** claim:
+
+- validation across many independent academic domains;
+- 100% automatic detection of every OCR error;
+- a complete large-scale multi-document database;
+- that every candidate question can safely be generated.
+
+### Fast audit entry points
+
+1. [BTC project audit guide](docs/btc/README_BTC_PROJECT_AUDIT.md)
+2. [Pilot Q1–Q6 history](docs/PILOT_QUESTION_HISTORY.md)
+3. [Final question checkpoint](docs/btc/final_question_pipeline_v1/BTC_FINAL_QUESTION_PIPELINE_CHECKPOINT_V1.md)
+4. [RAW-to-READY Python runner](code/examtrust_btc_p06_p07_p08_pipeline_from_raw.py)
+5. [Blank-Colab rerun guide](docs/btc/HOW_TO_RERUN_FROM_BLANK_COLAB.md)
+
+Stage-1 historical Page08 repository:
+
+https://github.com/zvutuanlinh/examtrust-ai-2026
+
+<!-- BTC_FINAL_VERIFICATION_END -->
