@@ -1,0 +1,121 @@
+{
+  "checkpoint_id": "EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1",
+  "project": "ExamTrust / SourceGuard R2",
+  "title": "ExamTrust R2 — 5-Page Cumulative Physical Segmentation",
+  "state": "ACCEPTED_CLOSED",
+  "human_decision": "CHOT_R2_CUMULATIVE_P06_P07_P11_P12_P29",
+  "closed_at_utc": "2026-09-19T10:13:43.161868+00:00",
+  "accepted_scope": [
+    "P06",
+    "P07",
+    "P11",
+    "P12",
+    "P29"
+  ],
+  "scope_count": 5,
+  "out_of_scope": [
+    "P39",
+    "P92",
+    "P94"
+  ],
+  "parent": {
+    "checkpoint": "FULL_CUMULATIVE_P06_P07_P11_P12_P29_ACCEPTED_V1_CHECKPOINT",
+    "sha256": "69d90a4a8f53ef571b4a97068b69212ac02be797c86fecc2f16e53e117ba2f99"
+  },
+  "final_source": {
+    "filename": "examtrust_pipeline_EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1.py",
+    "sha256": "91915ed5950f7fab301d2859e48ab5b854939c0d62b97f8364c8fdb8e2c5ddcb",
+    "source_kind": "FULL_CUMULATIVE_RUNNABLE_SOURCE",
+    "requires_notebook_patch": false,
+    "compile_verified": true
+  },
+  "execution_contract": "RAW -> FULL CUMULATIVE PIPELINE -> FINAL PHYSICAL RESULT -> LABEL -> FINAL RENDER",
+  "geometry": {
+    "status": "PASS",
+    "accepted_pages": [
+      "P06",
+      "P07",
+      "P11",
+      "P12",
+      "P29"
+    ],
+    "count": 5
+  },
+  "label_render": {
+    "status": "PASS",
+    "human_review": "ACCEPTED",
+    "revision": "EXAMTRUST_R2_5PAGE_FINAL_LABEL_RENDER_V3",
+    "rule": "SOURCEGUARD_LABEL_CONTEXT_CHAIN_RULESET_V1"
+  },
+  "evidence": {
+    "type": "FINAL_RENDERED_PNG",
+    "count": 5,
+    "pages": {
+      "P06": {
+        "source_path": "/content/drive/MyDrive/ET_FILES3_WORKSPACE 2/03_EXPERIMENTS/R2_5PAGE_FINAL_LABEL_RENDER_V3/OUTPUT/P06/P06_FINAL_LABEL_REVIEW_V3.png",
+        "bytes": 345731,
+        "sha256": "6a1b2876d44b3f6b212e805ea65531b2cd53b7260c715aa5e04c81176c4d72e6",
+        "human_decision": "ACCEPTED"
+      },
+      "P07": {
+        "source_path": "/content/drive/MyDrive/ET_FILES3_WORKSPACE 2/03_EXPERIMENTS/R2_5PAGE_FINAL_LABEL_RENDER_V3/OUTPUT/P07/P07_FINAL_LABEL_REVIEW_V3.png",
+        "bytes": 294855,
+        "sha256": "3471aa3249b5b809906bb1146b902e275e6ce7efc3378655a210b37b93ebb859",
+        "human_decision": "ACCEPTED"
+      },
+      "P11": {
+        "source_path": "/content/drive/MyDrive/ET_FILES3_WORKSPACE 2/03_EXPERIMENTS/R2_5PAGE_FINAL_LABEL_RENDER_V3/OUTPUT/P11/P11_FINAL_LABEL_REVIEW_V3.png",
+        "bytes": 268015,
+        "sha256": "5b0ce1a0727f95c75df7ff8835fa86731c0dcc7da7fea4c924e50431deb9dbad",
+        "human_decision": "ACCEPTED"
+      },
+      "P12": {
+        "source_path": "/content/drive/MyDrive/ET_FILES3_WORKSPACE 2/03_EXPERIMENTS/R2_5PAGE_FINAL_LABEL_RENDER_V3/OUTPUT/P12/P12_FINAL_LABEL_REVIEW_V3.png",
+        "bytes": 348742,
+        "sha256": "4dc143391ad5cf1a5af4be9d51e35ed040b23728206b06790722f43c86ebaba2",
+        "human_decision": "ACCEPTED"
+      },
+      "P29": {
+        "source_path": "/content/drive/MyDrive/ET_FILES3_WORKSPACE 2/03_EXPERIMENTS/R2_5PAGE_FINAL_LABEL_RENDER_V3/OUTPUT/P29/P29_FINAL_LABEL_REVIEW_V3.png",
+        "bytes": 325512,
+        "sha256": "0ce5b248976b37511f753e846654eab482fe49425ca49df10c6d26b8cb59dfa6",
+        "human_decision": "ACCEPTED"
+      }
+    }
+  },
+  "raw_inputs": {
+    "P06": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page06_Source.png",
+      "sha256": "3d524f1df5c37c47754ad08317c6b59c77bb2a77a2598af674b1884389f243c2"
+    },
+    "P07": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page07_Source.png",
+      "sha256": "081629b1c4973eedf8f7bddc4b2f7f93ff380b1db02ff103c0bf3e2cd6df24ed"
+    },
+    "P11": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page11_Source.png",
+      "sha256": "68623b82da9eb3daf0573118946925bf802a2adab0107ff97ab930628936f194"
+    },
+    "P12": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page12_Source.png",
+      "sha256": "c876251979a53b22ffd2976c60155dc0a64ea7daa519a5638396e24e9c72c6eb"
+    },
+    "P29": {
+      "path": "/content/drive/MyDrive/PILOT01_Physics12_Page29_Source.png",
+      "sha256": "192576143f8b71c042c726c34eb52acbb141ea89130d0d1239e4633621f07779"
+    }
+  },
+  "governance": {
+    "raw_modified": false,
+    "engine_modified": false,
+    "page08_gold_modified": false,
+    "page91_modified": false,
+    "parent_checkpoint_modified": false,
+    "r2_scope_closed_at_five_pages": true,
+    "p39_p92_p94_required_for_this_checkpoint": false
+  },
+  "historical_note": "Canonical accepted R2 five-page cumulative checkpoint. Scope: P06/P07/P11/P12/P29. Renamed from EXAMTRUST_R2_5PAGE_FINAL_ACCEPTED_V1 for consistent cumulative lineage naming. The full Python source and five accepted evidence PNGs remain byte-identical to the human-accepted closure. P39/P92/P94 remain outside the closed R2 scope.",
+  "canonical_name": "EXAMTRUST_R2_5PAGE_CUMULATIVE_ACCEPTED_V1",
+  "renamed_from": "EXAMTRUST_R2_5PAGE_FINAL_ACCEPTED_V1",
+  "canonicalized_at_utc": "2026-09-19T10:16:38.372227+00:00"
+}
