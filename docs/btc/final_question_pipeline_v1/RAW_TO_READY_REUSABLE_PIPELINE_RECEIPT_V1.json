@@ -1,0 +1,17 @@
+{
+  "schema": "examtrust.btc.reusable_raw_to_ready_pipeline.v1",
+  "created_at_utc": "2026-10-16T08:55:55.062832+00:00",
+  "pipeline": "code/examtrust_btc_p06_p07_p08_pipeline_from_raw.py",
+  "pipeline_sha256": "4a2b7a6bf82251ea289139481d1e68c142256a94532d5872733225fea18d3978",
+  "guide": "docs/btc/HOW_TO_RERUN_FROM_BLANK_COLAB.md",
+  "guide_sha256": "78572de33d2d1fda4be0185211d517de3619a249fbcd1fc567386e9a9516dc72",
+  "first_validation_run": "/content/drive/MyDrive/EXAMTRUST_BTC_FINAL_ISOLATED_V1/07_REPRO_RUNS/ET-BTC-RAW-REPLAY-20261016T085554Z",
+  "first_validation_manifest_sha256": "18b6d94d8314ac21ad6583f2900411f6e729189103e6172b1325860de5435224",
+  "first_validation_report_sha256": "cb79757819bf846214c38dd468ec01b9d49d3d6ec8374ef9f11dbfb0f5dadb36",
+  "historical_checkpoint_commit": "f56338a14a21e063de3d68eb31c0a6242ad29d18",
+  "historical_checkpoint_tag": "btc-final-p06-p07-p08-question-v1",
+  "live_gemini": false,
+  "live_ocr": false,
+  "historical_artifacts_mutated": false,
+  "result": "PASS_READY_TO_COMMIT"
+}
