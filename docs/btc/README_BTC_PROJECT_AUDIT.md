@@ -1033,3 +1033,82 @@ pipeline .py chạy lại từ RAW thật
 - **Historical Git evidence**: commit/tag lưu dấu các mốc thực tế.
 - **Retrospective BTC checkpoint/index**: được tạo sau để BTC dễ audit; không giả nhận là artifact lịch sử gốc.
 - **Current reproducibility run**: run mới sinh khi BTC chạy pipeline; dùng để chứng minh tính tái kiểm chứng, không phải để thay lịch sử gốc.
+
+
+## DUAL-REPO FULL-HISTORY AUTHORITY
+
+ExamTrust AI được lưu theo đúng lịch sử thực tế trong **hai Git repository**.
+Không ghép nhân tạo hai lịch sử Git thành một repository.
+
+### STAGE 1 — EXAMTRUST AI
+
+Repository:
+
+`https://github.com/zvutuanlinh/examtrust-ai-2026`
+
+Local authority:
+
+`/content/drive/MyDrive/ExamTrust_AI_2026/WORKSPACE/examtrust-ai-2026`
+
+Current verified Stage-1 Page08 milestone:
+
+`af5059072e7c217ac56e6f8c9d2f3c77ed30f465`
+
+Commit message:
+
+`chore(page08): preserve verified historical replay reference`
+
+Historical Page08 replay:
+
+`history/page08_reference/`
+
+Đây là evidence lịch sử của Stage 1 và không được tái tạo hoặc viết đè bởi BTC packaging.
+
+### STAGE 2 — SOURCEGUARD
+
+Repository:
+
+`https://github.com/zvutuanlinh/sourceguard`
+
+Local authority:
+
+`/content/drive/MyDrive/SourceGuard_Git/sourceguard`
+
+Current HEAD at documentation update: `81a987628b8338b16dfbed462da06836b82b1798`
+
+Stage 2 chứa SourceGuard baseline/runtime/retrieval, Q1-Q6 grounding governance,
+project closure, R2 history, final P06/P07/P08 lineage, reproducibility và BTC audit.
+
+### PROJECT HISTORY
+
+```text
+Stage 1 / ExamTrust AI
+    |
+    +-- development history
+    +-- Page08 verified historical replay
+    |       af5059072e7c217ac56e6f8c9d2f3c77ed30f465
+    |
+    v
+Stage 2 / SourceGuard
+    |
+    +-- baseline / runtime / retrieval
+    +-- Q1-Q6 grounding governance
+    +-- project closure
+    +-- R2 / 5-page history
+    +-- P06/P07/P08 final-question lineage
+    +-- RAW-to-READY reproducibility
+    +-- BTC audit / handoff
+```
+
+### AUDIT RULE
+
+Không khóa current `origin/main` vào một SHA tài liệu cũ.
+
+Audit phải kiểm:
+
+1. local HEAD bằng origin/main tại thời điểm audit;
+2. milestone lịch sử bắt buộc vẫn là ancestor của current main;
+3. historical tags resolve đúng target;
+4. RAW/evidence SHA256 đúng authority;
+5. history được bảo toàn, không rewrite.
+
