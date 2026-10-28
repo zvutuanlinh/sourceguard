@@ -1,0 +1,154 @@
+{
+  "schema": "examtrust.khkt.engine_replay.v1",
+  "checkpoint": "KHKT_E45_ENGINE_REPLAY_20261029",
+  "parent_checkpoint": "KHKT_E42_BIO_PHY_20261028",
+  "created_at_utc": "2026-10-28T17:37:24.568803+00:00",
+  "contract_id": "QC_PILOT_01",
+  "frozen_index_sha256": "e0f1f99e1ac26ff57217eec566f36ee694edfc99c70ebc6722855d0915478f69",
+  "original_engine_replay": "PASS",
+  "historical_teacher_decision": "APPROVED",
+  "gemini_called_in_E45": false,
+  "gemini_regeneration_equivalence_claimed": false,
+  "files": {
+    "REPLAY_PROVENANCE.json": {
+      "sha256": "31b3a8f239345bb35f515549bacc22c7e9dbdfda7c23e92166936bd6e57d9f8b",
+      "bytes": 321
+    },
+    "SOURCE_PATH_MAP.json": {
+      "sha256": "d55b9f8e65de79bc9f2bb3caaeceab4fdd3f7111306e620472f3c1e4cd39cc72",
+      "bytes": 1043
+    },
+    "engine/colab_run.py": {
+      "sha256": "0a6ba0d174317c4c0ab050f535cea8650e55ff5e96ca1fbeeb477b679f518224",
+      "bytes": 1462
+    },
+    "engine/examtrust_qg/__init__.py": {
+      "sha256": "b57d8cb78f9d7b2508993032d5842b2aaf07968f6381048ab2a7a5bb21523682",
+      "bytes": 245
+    },
+    "engine/examtrust_qg/__main__.py": {
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48
+    },
+    "engine/examtrust_qg/audit.py": {
+      "sha256": "61b201d855b2a204dd2d7d32314856fafd0a0f395f0edb8a72a5b54acd371a3a",
+      "bytes": 2211
+    },
+    "engine/examtrust_qg/cli.py": {
+      "sha256": "fb55afeefbe98097c1687885ff2df03ab1a8c6f279ef322f0470bfe3f7f20ffe",
+      "bytes": 3640
+    },
+    "engine/examtrust_qg/contract.py": {
+      "sha256": "593eb5d05f9b6f200b75cb8a58fbec8c3cea3189c4a26576795acaf2917c15d7",
+      "bytes": 6569
+    },
+    "engine/examtrust_qg/generation.py": {
+      "sha256": "770e70d6e33b2467de3a2ad3b96ddef15dcbeb153ae0b1d28dc2c9cf4bfccab4",
+      "bytes": 9152
+    },
+    "engine/examtrust_qg/grounding.py": {
+      "sha256": "92ca4c41075a7e74d1cae7e874b9f006e098748e0d0290c1a4b1c30f7cfdfb3c",
+      "bytes": 17929
+    },
+    "engine/examtrust_qg/llm.py": {
+      "sha256": "bcfe6ecee56f1adba79e1b52ef92df86ce748d3ae75d43fdb858519e116ae13e",
+      "bytes": 2975
+    },
+    "engine/examtrust_qg/pipeline.py": {
+      "sha256": "c42a7339d3f55d70408971cbdabdd2279a0272ff1d370313375d3b4fd7a05008",
+      "bytes": 16254
+    },
+    "engine/examtrust_qg/review.py": {
+      "sha256": "785d51c3688ab1fdb81bb6993c0288dbb60b150bde417c93ce595d1b226f057e",
+      "bytes": 9235
+    },
+    "engine/examtrust_qg/selection.py": {
+      "sha256": "c1032058ce197795c1a9f0414236f61a7124c804a146b5d9aa0b3c47073394ce",
+      "bytes": 7033
+    },
+    "engine/examtrust_qg/source_index.py": {
+      "sha256": "24c9e0f91eef5cf3a365eb29d1ce3ba58be102a476413b20f56f9184b2993250",
+      "bytes": 6163
+    },
+    "engine/examtrust_qg/util.py": {
+      "sha256": "d00533c40ff1f2ae4b1438d485412704d25c1f7bd3eafc50fa5c6f74e9f9a7d0",
+      "bytes": 2384
+    },
+    "engine/examtrust_qg/verification.py": {
+      "sha256": "e283ac51a4d7802b9c9855746b0b8b9cadb4296f4df97749ebc56f9a9340ce58",
+      "bytes": 18299
+    },
+    "engine/tests/conftest.py": {
+      "sha256": "30d816a9dc0d7a68fad4aa5381c5f512df91842e37aaa77c8e1b5ba3d9b92649",
+      "bytes": 9591
+    },
+    "engine/tests/test_pipeline.py": {
+      "sha256": "a886474b00a6cc91124a986f0e47b9c39df829ffff570335703286e34d3812fc",
+      "bytes": 20485
+    },
+    "frozen_index/content_chains.jsonl": {
+      "sha256": "dc0bfd382346b342f302a958b8d4ee2e20e45fb2458faa8b860b420527e0c011",
+      "bytes": 974
+    },
+    "frozen_index/index_manifest.json": {
+      "sha256": "b728689f80e3991433ee6f07eefc068959fba9554360331ba02625e97cde33ad",
+      "bytes": 1801
+    },
+    "frozen_index/source_units.jsonl": {
+      "sha256": "446ac189989ea718ca3cc8dd4fdc28f2b9d7bc067f377de3ff209bfb9be97432",
+      "bytes": 2455
+    },
+    "original_pages/58b345c674b0a9bca14c5383b2a820eb521bb6fe43bc93965c246e0d9f13a0a2.png": {
+      "sha256": "58b345c674b0a9bca14c5383b2a820eb521bb6fe43bc93965c246e0d9f13a0a2",
+      "bytes": 360670
+    },
+    "replay_input/01_SOURCE_SELECTION/SOURCE_SELECTION_REVIEW.json": {
+      "sha256": "6986db4c83385a44742023abbc2ae2fdf506eb5226a70425695688927f903a2b",
+      "bytes": 3330
+    },
+    "replay_input/02_CONTRACTS/contracts/QC_PILOT_01.json": {
+      "sha256": "a5e178ef31a9857437654551b8589dad83f322942cdd8f696fa4663bcf32e01a",
+      "bytes": 2912
+    },
+    "replay_input/02_CONTRACTS/evidence/QC_PILOT_01_evidence.json": {
+      "sha256": "66903a26ed8e3637e9550947c1e728efc44fc321946c53aed6340852a6f782b3",
+      "bytes": 1949
+    },
+    "replay_input/03_PREGEN_GROUNDING/QC_PILOT_01_A1_GATE.json": {
+      "sha256": "a9451e4eb6a1af30dc541aee92c193a3b0609cf079f6462fafdb6885c36847ab",
+      "bytes": 1092
+    },
+    "replay_input/03_PREGEN_GROUNDING/QC_PILOT_01_GROUNDING_REVIEW.json": {
+      "sha256": "4768eac414a10232fe1afc0fac349d05a2607d814425298960dd9bfa81807cbd",
+      "bytes": 5194
+    },
+    "replay_input/04_RAW_GENERATION/items/QC_PILOT_01_A1_GENERATED.json": {
+      "sha256": "ca4718b83d3bc2c93d08b389030c7d91edd0b6a3530a1d0f735a775db668c02d",
+      "bytes": 13639
+    },
+    "replay_input/04_RAW_GENERATION/items/QC_PILOT_01_A1_RAW_1.txt": {
+      "sha256": "27a5950c18a886592ff4a83008acfd7368bb49f05e57bc61e9317f393916e2ec",
+      "bytes": 3545
+    },
+    "replay_input/06_VERIFICATION_PACK/source_previews/QC_PILOT_01_BIO12_P07_T1.png": {
+      "sha256": "d4b4e812df39ef615f272d2ec59488269233d0636441b8ca05f68c4f5206a47a",
+      "bytes": 97722
+    },
+    "replay_input/06_VERIFICATION_PACK/source_previews/QC_PILOT_01_BIO12_P07_T2.png": {
+      "sha256": "d5777247233ee4cb0b94ed3ebc187cd00a760f984aa762c169fe815cb7fde4ce",
+      "bytes": 107049
+    },
+    "replay_input/06_VERIFICATION_PACK/source_previews/QC_PILOT_01_BIO12_P07_V1.png": {
+      "sha256": "e3cefe5f22c5ef05b176367d2bec7718f316494526d54f80d17920830e0c2551",
+      "bytes": 86049
+    },
+    "replay_input/AUDIT/EDR_LEDGER.jsonl": {
+      "sha256": "2445fd9ca209c6bc4f7a498e01e14c1342b960bf5b4a883e74bb191b1a1cd5cf",
+      "bytes": 2901
+    },
+    "replay_input/STATE/QC_PILOT_01.json": {
+      "sha256": "0be8985d7bc3e38d5f85d62963c65b6da284e0b61d398e86c831f00490120041",
+      "bytes": 445
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "contract_id": "QC_PILOT_01",
+  "attempt": 1,
+  "generated_file": "/content/EXAMTRUST_KHKT_WORK/E45_ENGINE_REPLAY_CHECKPOINT/20261028T173724387706Z/REPLAY_WORK/04_RAW_GENERATION/items/QC_PILOT_01_A1_GENERATED.json",
+  "generated_file_sha256": "ca4718b83d3bc2c93d08b389030c7d91edd0b6a3530a1d0f735a775db668c02d",
+  "item_sha256": "15cf21ac022e4e96d4f733039ed4f3f19fc0d28a5fe90941214589bf72a92db3",
+  "contract_sha256": "a5e178ef31a9857437654551b8589dad83f322942cdd8f696fa4663bcf32e01a",
+  "review_file_sha256": "4768eac414a10232fe1afc0fac349d05a2607d814425298960dd9bfa81807cbd",
+  "result": {
+    "schema": "examtrust.qg.post_generation_verification.v1",
+    "evaluated_at_utc": "2026-10-28T17:37:24Z",
+    "structural_verdict": "PASS",
+    "grounding_verdict": "PASS",
+    "verdict": "PASS",
+    "approvable_by_teacher": true,
+    "flags_requiring_acknowledgement": [],
+    "findings": [],
+    "llm_cross_check": null,
+    "note": "Structural PASS does not imply grounding PASS. LLM findings are advisory (FLAG only)."
+  }
+}
