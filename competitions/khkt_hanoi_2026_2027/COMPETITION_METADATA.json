@@ -1,0 +1,15 @@
+{
+  "competition": "KHKT Ha Noi",
+  "academic_year": "2026-2027",
+  "project": "ExamTrust AI - SourceGuard",
+  "repository": "https://github.com/zvutuanlinh/sourceguard.git",
+  "branch": "competition/khkt-hanoi-2026-2027-sourceguard",
+  "baseline_commit": "69117b9a6c002ba24f5dd56d2810c4f713fda9b0",
+  "pilot": "BIO12_P07_CROSS_SUBJECT_REPLAY_V1",
+  "replay_status": "PASS",
+  "caption_owner": "V2",
+  "physics_regression": "PENDING",
+  "question_generation": "PENDING",
+  "production_approval": "HOLD",
+  "historical_records_modified": false
+}

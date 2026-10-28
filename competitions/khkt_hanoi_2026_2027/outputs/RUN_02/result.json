@@ -1,0 +1,175 @@
+{
+  "schema": "SourceGuard_CrossSubject_Replay_v1",
+  "status": "PILOT_GEOMETRY_PASS_REVIEW_REQUIRED",
+  "hold_reasons": [],
+  "input_sha256": "58b345c674b0a9bca14c5383b2a820eb521bb6fe43bc93965c246e0d9f13a0a2",
+  "base_pipeline_sha256": "91915ed5950f7fab301d2859e48ab5b854939c0d62b97f8364c8fdb8e2c5ddcb",
+  "base_engine_sha256": "722984053f62369b83e7306f51f9abf80b60e254e6354eed8f1b046fa9f1d1ac",
+  "graphic_gate": {
+    "[85, 86, 592, 222]": {
+      "protected": false,
+      "color_fraction": 0.01373,
+      "colored_components": 15,
+      "horizontal_stroke_pixels": 0,
+      "vertical_stroke_pixels": 0
+    },
+    "[39, 279, 599, 496]": {
+      "protected": true,
+      "color_fraction": 0.09911,
+      "colored_components": 39,
+      "horizontal_stroke_pixels": 2851,
+      "vertical_stroke_pixels": 592
+    },
+    "[85, 619, 592, 822]": {
+      "protected": false,
+      "color_fraction": 0.0,
+      "colored_components": 0,
+      "horizontal_stroke_pixels": 0,
+      "vertical_stroke_pixels": 0
+    }
+  },
+  "visuals": [
+    {
+      "id": "V1",
+      "core_bbox": [
+        39,
+        279,
+        599,
+        504
+      ],
+      "full_bbox": [
+        39,
+        279,
+        599,
+        504
+      ],
+      "semantic_role": "VISUAL"
+    },
+    {
+      "id": "V2",
+      "core_bbox": [
+        232,
+        503,
+        382,
+        579
+      ],
+      "full_bbox": [
+        87,
+        503,
+        590,
+        607
+      ],
+      "semantic_role": "VISUAL",
+      "caption": {
+        "bbox": [
+          87,
+          597,
+          590,
+          607
+        ],
+        "owner": "V2",
+        "ocr": "",
+        "status": "GEOMETRICALLY_ATTACHED"
+      },
+      "caption_lines": 1
+    }
+  ],
+  "text_regions": [
+    {
+      "id": "T1",
+      "bbox": [
+        61,
+        88,
+        589,
+        274
+      ],
+      "semantic_role": "TEXT"
+    },
+    {
+      "id": "T2",
+      "bbox": [
+        87,
+        622,
+        590,
+        820
+      ],
+      "semantic_role": "TEXT"
+    }
+  ],
+  "removed_duplicates": [
+    {
+      "bbox": [
+        425,
+        204,
+        583,
+        206
+      ],
+      "reason": "CONTAINED"
+    },
+    {
+      "bbox": [
+        514,
+        257,
+        584,
+        259
+      ],
+      "reason": "CONTAINED"
+    },
+    {
+      "bbox": [
+        420,
+        633,
+        514,
+        635
+      ],
+      "reason": "CONTAINED"
+    }
+  ],
+  "excluded_furniture": [
+    {
+      "bbox": [
+        226,
+        3,
+        309,
+        11
+      ],
+      "reason": "FURNITURE_OR_SOURCE"
+    },
+    {
+      "bbox": [
+        357,
+        3,
+        423,
+        8
+      ],
+      "reason": "FURNITURE_OR_SOURCE"
+    },
+    {
+      "bbox": [
+        60,
+        841,
+        180,
+        851
+      ],
+      "reason": "FURNITURE_OR_SOURCE"
+    },
+    {
+      "bbox": [
+        570,
+        861,
+        652,
+        886
+      ],
+      "reason": "FURNITURE_OR_SOURCE"
+    }
+  ],
+  "caption_candidate": [
+    87,
+    597,
+    590,
+    607
+  ],
+  "question_generation_authorized": false,
+  "physics_regression_verified": false,
+  "production_approved": false
+}

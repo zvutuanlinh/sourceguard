@@ -1,0 +1,14 @@
+{
+  "COMPETITION_METADATA.json": "9ba78ad4f5a19ab788c4bceec862ad971acffc50e9410cc01cf59dd9b138a488",
+  "ORIGINAL_REPLAY_MANIFEST.json": "91770bfc15a5fa8197843c92d463664125c8f2ed4526f5440b75c96f52dec040",
+  "README_KHKT_HANOI_2026_2027.md": "590de221654ff8aca4d6a7565ff76f84c2eb6938380c2a0b5b882e5e2548a981",
+  "code/pipeline.py": "91915ed5950f7fab301d2859e48ab5b854939c0d62b97f8364c8fdb8e2c5ddcb",
+  "code/replay.py": "f42376b508ac701ba9acb2cc5bbbce28944fc011b2d5101a6e5e9ab8a20a5d69",
+  "code/sourceguard_engine.py": "722984053f62369b83e7306f51f9abf80b60e254e6354eed8f1b046fa9f1d1ac",
+  "evidence/REPLAY_VERIFICATION.json": "0f244c9d6806f337c8315abac0c042894e072faed511935908bc7b49e3aa3ecc",
+  "outputs/RUN_01/overlay.png": "1ccbe8005823cff4f9dfd8bbb7d261b35b94fa8711c983e3c309dd036d689ddc",
+  "outputs/RUN_01/result.json": "1705607c504dbfbe74f1f2b543e1d685ef9699d3f0ca179e49652a00a2228631",
+  "outputs/RUN_02/overlay.png": "1ccbe8005823cff4f9dfd8bbb7d261b35b94fa8711c983e3c309dd036d689ddc",
+  "outputs/RUN_02/result.json": "1705607c504dbfbe74f1f2b543e1d685ef9699d3f0ca179e49652a00a2228631",
+  "source/input.png": "58b345c674b0a9bca14c5383b2a820eb521bb6fe43bc93965c246e0d9f13a0a2"
+}

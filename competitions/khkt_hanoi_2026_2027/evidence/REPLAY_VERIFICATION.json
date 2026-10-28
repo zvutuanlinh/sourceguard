@@ -1,0 +1,14 @@
+{
+  "status": "REPLAY_PILOT_PASS",
+  "run_1_result_sha256": "1705607c504dbfbe74f1f2b543e1d685ef9699d3f0ca179e49652a00a2228631",
+  "run_2_result_sha256": "1705607c504dbfbe74f1f2b543e1d685ef9699d3f0ca179e49652a00a2228631",
+  "run_1_overlay_sha256": "1ccbe8005823cff4f9dfd8bbb7d261b35b94fa8711c983e3c309dd036d689ddc",
+  "run_2_overlay_sha256": "1ccbe8005823cff4f9dfd8bbb7d261b35b94fa8711c983e3c309dd036d689ddc",
+  "same_result": true,
+  "same_overlay": true,
+  "caption_owner": "V2",
+  "original_source_unchanged": true,
+  "physics_regression_verified": false,
+  "production_approved": false,
+  "question_generation_authorized": false
+}
