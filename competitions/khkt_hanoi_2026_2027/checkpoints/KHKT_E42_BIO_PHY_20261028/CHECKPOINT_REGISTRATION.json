@@ -1,0 +1,23 @@
+{
+  "schema": "examtrust.khkt.checkpoint_registration.v1",
+  "checkpoint_id": "KHKT_E42_BIO_PHY_20261028",
+  "recorded_at_utc": "2026-10-28T17:33:37.720869+00:00",
+  "source_repository": "zvutuanlinh/sourceguard",
+  "source_branch": "competition/khkt-hanoi-2026-2027-sourceguard",
+  "parent_head": "b228d307bb72688db60a598a59365ef522b9e3cf",
+  "biology": {
+    "contract": "QC_PILOT_01",
+    "generation_model": "gemini-3.6-flash",
+    "postgen_verdict": "PASS",
+    "teacher_status": "TEACHER_APPROVED",
+    "ready_for_use": true
+  },
+  "physics": {
+    "historical_v1": "SOURCE_EVIDENCE_FAIL",
+    "historical_v2": "SOURCE_EVIDENCE_PASS",
+    "reexecuted_in_E44": false
+  },
+  "verification_scope": "ARCHIVAL_OFFLINE_AUDIT",
+  "gemini_reexecuted": false,
+  "production_approved": false
+}

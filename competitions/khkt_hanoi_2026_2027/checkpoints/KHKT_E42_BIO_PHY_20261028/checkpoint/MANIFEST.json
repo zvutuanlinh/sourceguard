@@ -1,0 +1,27 @@
+{
+  "schema": "examtrust.khkt.checkpoint.v1",
+  "checkpoint_id": "KHKT_E42_BIO_PHY_20261028",
+  "status": "ARCHIVAL_VERIFIED",
+  "archival_not_new_rerun": true,
+  "original_e42_sha256": "960452f11049567cefb589ea85cf461ef74d3a4d1d20acd605d561350e93d63b",
+  "physics_e10_sha256": "4a5d4e48fc1ad10beaf4b4dc69a0365ab736c5fcd3a6ff75f3c7a38b7895c5bd",
+  "contents": [
+    {
+      "path": "checkpoint/evidence/EXAMTRUST_E42_VERIFIED_CROSS_SUBJECT_FINAL.zip",
+      "size": 1620727,
+      "sha256": "d96c256f20cc278ca4409137fcb340e997a3450aa6dbb3721c993172b7a47da9"
+    },
+    {
+      "path": "checkpoint/CROSS_SUBJECT_VERIFICATION.json",
+      "size": 1629,
+      "sha256": "2c9ed81c4b9bf9553870afac0aa77323f5aa4fef4f1a4ed8d8afa7f8e993adbd"
+    },
+    {
+      "path": "checkpoint/BAO_CAO_DOI_CHIEU.html",
+      "size": 6488,
+      "sha256": "637ec3723e3d945469c08e6216ddcf6d0b2ae09a06984040b891768c9f62496e"
+    }
+  ],
+  "generation_repeatability": "NOT_BYTE_IDENTICAL_GEMINI",
+  "production_approved": false
+}

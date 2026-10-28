@@ -1,0 +1,49 @@
+{
+  "schema": "examtrust.cross_subject.archival_verification.v1",
+  "scope": "Verification of submitted archival files only, not an independent rerun",
+  "biology": {
+    "subject": "BIO12",
+    "contract": "QC_PILOT_01",
+    "model": "gemini-3.6-flash",
+    "source_ids": [
+      "BIO12_P07_T1",
+      "BIO12_P07_T2",
+      "BIO12_P07_V1"
+    ],
+    "postgen_verdict": "PASS",
+    "engine_state": "APPROVED",
+    "teacher_status": "TEACHER_APPROVED",
+    "reviewer": "Trương Thị Thu Hằng",
+    "ready_for_use": true,
+    "answer": "A",
+    "final_item_sha256": "15cf21ac022e4e96d4f733039ed4f3f19fc0d28a5fe90941214589bf72a92db3"
+  },
+  "physics": {
+    "subject": "PHY12",
+    "archive_sha256": "4a5d4e48fc1ad10beaf4b4dc69a0365ab736c5fcd3a6ff75f3c7a38b7895c5bd",
+    "historical_only": true,
+    "v1_postgen": "SOURCE_EVIDENCE_FAIL",
+    "v2_postgen": "SOURCE_EVIDENCE_PASS",
+    "final_state": "READY_FOR_USE",
+    "teacher_review": {
+      "status": "APPROVED",
+      "single_confirmation": true
+    },
+    "ready_for_use": true,
+    "publication_state": "AUTHORIZED_FOR_BTC_DEMO",
+    "source_ids": [
+      "PHY12_P06_R03",
+      "PHY12_P07_V01",
+      "PHY12_P08_V01"
+    ],
+    "answer": "A",
+    "original_manifest_checks_passed": 9,
+    "original_manifest_mismatches": []
+  },
+  "comparison_caveat": "Different periods, pipeline schema and teacher approval workflows; not a head-to-head accuracy or performance benchmark.",
+  "e42_original_sha256": "960452f11049567cefb589ea85cf461ef74d3a4d1d20acd605d561350e93d63b",
+  "new_generation": false,
+  "new_api_calls": false,
+  "git_write": false,
+  "drive_write": false
+}
