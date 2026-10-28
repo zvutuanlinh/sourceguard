@@ -1,0 +1,12 @@
+{
+  "checkpoint": "KHKT_E46_ONE_CLICK_REPRODUCE",
+  "parent_commit": "8d281eb05ec4c4c5a3e36d65afd54c44fd80cb10",
+  "original_e45_sha256": "4e32576d26e54a5000652d7bc0fb99ccc01354d4c00b6d7f844356948e681c93",
+  "derived_archive_sha256": "e8b3d5c2c38e1a3cb77e139a96c53764dbd597dc69e40813da9d6fe4ccfd4796",
+  "runner_sha256": "c9b64fe83926b655112aaab579e7e2ae5f1c38edd4a322eac262343ea156b24d",
+  "offline_reproduction_pass": true,
+  "clean_machine_tested": false,
+  "online_generation_tested": false,
+  "gemini_called": false,
+  "historical_files_modified": false
+}
